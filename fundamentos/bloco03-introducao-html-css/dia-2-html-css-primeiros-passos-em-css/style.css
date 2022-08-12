@@ -1,7 +1,26 @@
+body {
+    font-size: 16px;
+    text-align: center;
+}
 h1 {
     font-size: 65px;
     color: orange;
+    font-family: sans-serif;
 }
 .backgroud-color {
+    font-style: normal;
+}
+p {
     background-color: bisque;
+    font-weight: 600;
+    font-size: 48px;
+}
+#yellow {
+    background-color: yellow;
+}
+#red {
+    background-color: red;
+}
+#brown {
+    background-color: brown;
 }
