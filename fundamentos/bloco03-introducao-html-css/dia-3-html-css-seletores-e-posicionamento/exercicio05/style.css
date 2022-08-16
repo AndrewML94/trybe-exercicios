@@ -1,0 +1,62 @@
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+h1, h3 {
+    color: red;
+}
+
+li {
+    font-size: 20px;
+}
+
+ol li {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+.program:nth-child(-n+3) {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#orange:hover {
+    color: orange;
+}
+
+#green:hover {
+    color: green;
+}
+
+#black:hover {
+    color: black;
+}
+
+#yellow:hover {
+    color: yellow;
+}
+
+#green2:hover {
+    color: green;
+}
