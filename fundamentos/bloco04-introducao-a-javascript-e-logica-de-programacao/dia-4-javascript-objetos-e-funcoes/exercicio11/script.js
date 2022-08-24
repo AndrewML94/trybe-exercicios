@@ -1,7 +1,6 @@
 //Foi criado uma função para retornar o nome com maior quantidade de caracteres
 
 let nomes = ['josé', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-let contLetras = 0;
 let resultado = [];
 
 function maiorNome() {
