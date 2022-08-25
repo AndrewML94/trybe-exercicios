@@ -1,12 +1,9 @@
-//Utilizado um for/in para mostrar todas as chaves do objeto
+//Será imprimido no console o valor da chave personagem
 
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-  recorrente: 'Sim',
 };
 
-for (const key in info) {
-  console.log(key);
-}
+console.log('Bem-vinda,' + ' ' + info.personagem);

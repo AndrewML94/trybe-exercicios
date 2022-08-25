@@ -1,4 +1,4 @@
-//Utilizado um for/in para mostrar todas as chaves do objeto
+//Foi inserido no objeto uma nova propriedade e imprido no console
 
 let info = {
   personagem: 'Margarida',
@@ -7,6 +7,4 @@ let info = {
   recorrente: 'Sim',
 };
 
-for (const key in info) {
-  console.log(key);
-}
+console.log(info);

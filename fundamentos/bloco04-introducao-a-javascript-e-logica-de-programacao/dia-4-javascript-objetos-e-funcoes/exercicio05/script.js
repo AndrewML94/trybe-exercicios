@@ -1,4 +1,4 @@
-//Agora deve-se definir um segundo objeto, acréscimo de informações, e após imprimir os valores de cada objeto com suas respectivas chaves
+//Foi definido um segundo objeto acrescido de informações, e após a impressão dos valores de cada objeto com suas respectivas chaves
 
 let info = {
   personagem: 'Margarida',

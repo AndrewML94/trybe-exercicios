@@ -1,4 +1,4 @@
-//Adicione um novo livro favorito na chave livros favoritos e após acesse as chaves nome e livros favoritos e faça um console.log
+//Foi adicionado um  novo livro favorito na chave livros favoritos e após, acessado as chaves nome e livros favoritos e feito um console.log
 
 let leitor = {
   nome: 'Julia',

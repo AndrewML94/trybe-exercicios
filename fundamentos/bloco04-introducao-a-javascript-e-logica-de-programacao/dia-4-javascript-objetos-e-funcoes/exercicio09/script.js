@@ -1,4 +1,4 @@
-//Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+//Foi criado uma função que recebeu um array de inteiros e retornado o índice de maior valor.
 
 let teste = [2, 3, 6, 7, 10, 1];
 let resultado = 0;
