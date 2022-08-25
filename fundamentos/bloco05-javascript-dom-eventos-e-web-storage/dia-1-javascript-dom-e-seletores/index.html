@@ -42,15 +42,6 @@
       </section>
     </main>
     <script>
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
-        5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
-       /* Função para alterar o descritivo da 2ª tag <p> */
 
        function futuro2anos() {
         document.getElementsByTagName('p')[1].innerText = 'Espero estar atuando na área de tecnologia, conforme planejado';
@@ -93,6 +84,16 @@
         }
        }
        tudoMaiusculo()
+
+       /* Função para mostrar todo os conteúdos das tags <p> no console */
+
+       function mostraNoConsole() {
+        let mostra = document.getElementsByTagName('p');
+        for (let cont of mostra) {
+          console.log(cont.innerText)
+        }
+       }
+       mostraNoConsole()
     </script>
   </body>
 </html>
