@@ -1,4 +1,4 @@
-//Faça um for/in mostrando todos os valores do objeto
+//Foi utilizado um for/in para mostrar todos os valores do objeto
 
 let info = {
   personagem: 'Margarida',

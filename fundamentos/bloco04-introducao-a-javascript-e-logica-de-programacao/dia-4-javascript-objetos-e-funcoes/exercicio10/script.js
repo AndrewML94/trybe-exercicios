@@ -1,4 +1,4 @@
-//Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+//Foi criado uma função que recebeu um array de inteiros e retornado o índice de menor valor.
 
 let teste = [2, 4, 6, 7, 10, 0, -3];
 let resultado = 0;

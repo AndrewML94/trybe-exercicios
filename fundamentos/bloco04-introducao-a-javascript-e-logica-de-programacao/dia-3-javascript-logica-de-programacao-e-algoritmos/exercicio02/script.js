@@ -1,8 +1,10 @@
-let world = 'tryber';
+let world = 'go Trybe';
 let dlrow = [];
 
 for (let index = 0; index < world.length; index+=1) {
-  dlrow.push(world[index]);
+  if (index === ' ') {
+    dlrow.push(world[index]);
+  }
 }
 
-console.log(dlrow.reverse(dlrow));
+console.log(dlrow);

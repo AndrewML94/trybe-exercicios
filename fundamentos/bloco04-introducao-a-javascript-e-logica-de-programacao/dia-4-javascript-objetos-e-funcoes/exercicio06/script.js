@@ -1,4 +1,4 @@
-//Acesse as chaves nome, sobrenome e título que está dentro da chave livrosFavoritos e faça um console.log
+//Foi acessado as chaves nome, sobrenome e título que está dentro da chave livrosFavoritos e feito um console.log
 
 let leitor = {
   nome: 'Julia',
