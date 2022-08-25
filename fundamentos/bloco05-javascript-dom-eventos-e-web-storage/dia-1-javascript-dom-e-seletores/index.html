@@ -47,7 +47,6 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
-        2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
         3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
         4. Crie e execute uma função que corrija o texto da tag <h1>.
         5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
@@ -63,10 +62,23 @@
        /*
        Função para alterar a cor do quadrado da classe main-content
        */
-       function trocaCorDeFundo() {
-        document.getElementsByClassName('.main-content').style.backgroundColor = 'rgb(76,164,109)';
+       function trocaCorDeFundoMain() {
+        let cor = document.getElementsByClassName('main-content');
+        for (let index = 0; index < cor.length; index +=1) {
+          cor[index].style.backgroundColor = 'rgb(76,164,109)';
+        }
        }
-       trocaCorDeFundo()
+       trocaCorDeFundoMain()
+        /*
+       Função para alterar a cor do quadrado da classe center-content
+       */
+       function trocaCorDeFundoCenter() {
+        let cor = document.getElementsByClassName('center-content');
+        for (let index = 0; index < cor.length; index +=1) {
+          cor[index].style.backgroundColor = 'white';
+        }
+       }
+       trocaCorDeFundoCenter()
     </script>
   </body>
 </html>
