@@ -47,21 +47,18 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
-        3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
-        4. Crie e execute uma função que corrija o texto da tag <h1>.
         5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       /*
-       Função para alterar o descritivo da 2ª tag <p>
-        */
+       /* Função para alterar o descritivo da 2ª tag <p> */
+
        function futuro2anos() {
         document.getElementsByTagName('p')[1].innerText = 'Espero estar atuando na área de tecnologia, conforme planejado';
        }
        futuro2anos()
-       /*
-       Função para alterar a cor do quadrado da classe main-content
-       */
+
+       /* Função para alterar a cor do quadrado da classe main-content */
+
        function trocaCorDeFundoMain() {
         let cor = document.getElementsByClassName('main-content');
         for (let index = 0; index < cor.length; index +=1) {
@@ -69,9 +66,9 @@
         }
        }
        trocaCorDeFundoMain()
-        /*
-       Função para alterar a cor do quadrado da classe center-content
-       */
+
+       /* Função para alterar a cor do quadrado da classe center-content */
+
        function trocaCorDeFundoCenter() {
         let cor = document.getElementsByClassName('center-content');
         for (let index = 0; index < cor.length; index +=1) {
@@ -79,6 +76,23 @@
         }
        }
        trocaCorDeFundoCenter()
+
+       /* Função para ajustar o texto da tag <h1> */
+
+       function ajusteTexto() {
+        document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+       }
+       ajusteTexto()
+
+       /* Função para ajustar o texto da tag <p> para maiúscula */
+
+       function tudoMaiusculo() {
+        let maiusculo = document.getElementsByTagName('p');
+        for (let index = 0; index < maiusculo.length; index++) {
+          maiusculo[index].style.textTransform = 'uppercase'
+        }
+       }
+       tudoMaiusculo()
     </script>
   </body>
 </html>
