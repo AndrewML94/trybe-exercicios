@@ -86,10 +86,15 @@
       main.classList.add('main-content');
       
       /* #3 Adicionando a tag <section> com a classe center-content como filho da tag <main> */
+
       criadorDeElementosDentroTag('section', main);
       const section1 = document.querySelector('section');
       section1.classList.add('center-content');
+
       /* #4 Adicionando a tag <p> como filho da tag <section> */
+      
+      criadorDeElementosDentroTag('p', section1);
+      const p = document.querySelector('p');
 
       /* #5 Adicionando a tag <section> com a classe left-content como filho da tag <main> */
 
