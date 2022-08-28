@@ -88,7 +88,7 @@
       /* #3 Adicionando a tag <section> com a classe center-content como filho da tag <main> */
 
       criadorDeElementosDentroTag('section', main);
-      const section1 = document.querySelector('section');
+      const section1 = document.querySelectorAll('section')[0];
       section1.classList.add('center-content');
 
       /* #4 Adicionando a tag <p> como filho da tag <section> */
@@ -97,6 +97,10 @@
       const p = document.querySelector('p');
 
       /* #5 Adicionando a tag <section> com a classe left-content como filho da tag <main> */
+
+      criadorDeElementosDentroTag('section', main);
+      const section2 = document.querySelectorAll('section')[1];
+      section2.classList.add('left-content');
 
       /* #6 Adicionando a tag <section> com a classe right-content como filho da tag <main> */
 
