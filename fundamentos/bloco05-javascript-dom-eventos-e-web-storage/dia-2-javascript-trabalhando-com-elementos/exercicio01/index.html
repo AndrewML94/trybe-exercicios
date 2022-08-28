@@ -65,22 +65,30 @@
         const elemento = document.createElement(tag);
         elementoPai.insertBefore(elemento, adicionaAntes);
       }
+      function criadorDeElementosDentroTag(tag, elementoPai) {
+        const elemento = document.createElement(tag);
+        elementoPai.appendChild(elemento);
+      }
       function escrita (tag, index, mensagem) {
         document.querySelectorAll(tag)[index].innerText = mensagem;
       }
+
       /* #1 Adicionando a tag <h1> com texto */
       
       criadorDeElementos('h1', body, script);
+      const h1 = document.querySelector('h1');
       escrita('h1', 0, 'Exercício 5.2 - JavaScript DOM');
 
       /* #2 Adicionando a tag <main> com a classe main-content como filho da tag <body> */
-      const h1 = document.querySelector('h1');
-      criadorDeElementos('main', body, h1);
+
+      criadorDeElementos('main', body, script);
       const main = document.querySelector('main');
       main.classList.add('main-content');
       
       /* #3 Adicionando a tag <section> com a classe center-content como filho da tag <main> */
-      
+      criadorDeElementosDentroTag('section', main);
+      const section1 = document.querySelector('section');
+      section1.classList.add('center-content');
       /* #4 Adicionando a tag <p> como filho da tag <section> */
 
       /* #5 Adicionando a tag <section> com a classe left-content como filho da tag <main> */
