@@ -117,7 +117,25 @@
 
       /* #8 Adicionando uma tag <ul> com valores de 1 a 10 sendo filha da tag <section> */
 
+      criadorDeElementosDentroTag('ul', section3);
+      const ul = document.querySelector('ul');
+      ul.classList.add('small-list');
+      const numeros = [
+        'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      const lista1 = document.querySelector('.small-list');
+      for (let index = 0; index < numeros.length; index += 1) {
+        let lista2 = numeros[index];
+        let lista3 = document.createElement('li');
+        lista3.innerText = lista2;
+        lista1.appendChild(lista3);
+      }
+      
+
       /* #9 Adicionando 3 tags <h3> como filho da tag <main> */
+
+      criadorDeElementosDentroTag('h3', main);
+      criadorDeElementosDentroTag('h3', main);
+      criadorDeElementosDentroTag('h3', main);    
 
       /* #10 Adicionando a classe title na tag <h1> */
 
