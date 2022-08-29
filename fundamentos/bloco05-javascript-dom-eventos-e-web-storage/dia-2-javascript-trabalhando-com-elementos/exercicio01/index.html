@@ -134,13 +134,22 @@
       /* #9 Adicionando 3 tags <h3> como filho da tag <main> */
 
       criadorDeElementosDentroTag('h3', main);
+      const h31 = document.querySelectorAll('h3')[0];
       criadorDeElementosDentroTag('h3', main);
-      criadorDeElementosDentroTag('h3', main);    
+      const h32 = document.querySelectorAll('h3')[1];
+      criadorDeElementosDentroTag('h3', main); 
+      const h33 = document.querySelectorAll('h3')[2];   
 
       /* #10 Adicionando a classe title na tag <h1> */
 
+      h1.classList.add('title');
+
       /* #11 Adicionando a classe description nas 3 tags <h3> */
       
+      h31.classList.add('description');
+      h32.classList.add('description');
+      h33.classList.add('description');
+
       /* #12 Removendo a tag <section> com a classe left-content */
 
       /* #13 Centralizando a tag <section> com a classe rigth-content */
