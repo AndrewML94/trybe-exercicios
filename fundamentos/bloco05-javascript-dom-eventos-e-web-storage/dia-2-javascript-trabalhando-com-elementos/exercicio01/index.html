@@ -127,6 +127,7 @@
         let lista2 = numeros[index];
         let lista3 = document.createElement('li');
         lista3.innerText = lista2;
+        lista3.className = 'listaDescricao';
         lista1.appendChild(lista3);
       }
       
@@ -152,13 +153,21 @@
 
       /* #12 Removendo a tag <section> com a classe left-content */
 
-      main.removeChild(section2)
+      main.removeChild(section2);
 
       /* #13 Centralizando a tag <section> com a classe rigth-content */
 
+      section3.style.marginRight = 'auto';
+
       /* #14 Trocando a cor de fundo do elemento pai da <section> da classe center-content */
 
+      main.style.backgroundColor = 'green';
+
       /* #15 Removendo os 2 últimos elementos */
+      
+      ul.removeChild(ul.lastChild);
+      ul.removeChild(ul.lastChild);
+
     </script>
   </body>
 </html>
