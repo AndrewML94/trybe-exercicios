@@ -115,11 +115,22 @@ zoomDias.addEventListener('mouseout', function(zoom1) {
 
 /* #7 Criando uma função para adicionar uma tarefa personalizada ao calendário */
 
+const divTarefa = document.querySelector('.my-tasks');
 function descritivoDeTarefa (nomeTarefa) {
-  const divTarefa = document.querySelector('.my-tasks');
   const span = document.createElement('span');
   const tarefa = span.innerText = nomeTarefa;
   divTarefa.appendChild(span, tarefa)
 };
 
 descritivoDeTarefa('Buscar o Tiri na creche')
+
+/* #8 Criando uma função para legenda com cor */
+
+function alteraCor() {
+  const divCor = document.createElement('div');
+  divCor.classList.add('task');
+  const coloracao = divCor.style.backgroundColor = 'blue';
+  divTarefa.appendChild(divCor, coloracao);
+}
+
+alteraCor()
