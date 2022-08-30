@@ -90,7 +90,7 @@ function alteraTexto(sextas) {
   botao2[1].addEventListener('click', function() {
     for (let index = 0; index < sexta.length; index += 1) {
       if (sexta[index].innerText !== 'Sextou o/') {
-        sexta[index].innerText = 'Sextou o/'
+        sexta[index].innerText = 'Sextou o/';
       } else {
         sexta[index].innerText = sextas[index];
       }
@@ -100,3 +100,16 @@ function alteraTexto(sextas) {
 
 let sextasDeDezembro = [4, 11, 18, 25]
 alteraTexto(sextasDeDezembro)
+
+/* #6 Criando duas funções que irão dar zoom nos dias em que o mouse passar */
+
+const zoomDias = document.querySelector('#days')
+
+zoomDias.addEventListener('mouseover', function(zoom1) {
+  zoom1.target.style.fontSize = '23px';
+})
+
+zoomDias.addEventListener('mouseout', function(zoom1) {
+  zoom1.target.style.fontSize = '';
+})
+
