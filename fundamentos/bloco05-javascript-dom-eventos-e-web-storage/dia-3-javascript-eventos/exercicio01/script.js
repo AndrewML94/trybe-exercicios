@@ -48,19 +48,19 @@ function criaLi() {
 
 criaLi()
 
-/* #2 Criando um botão dinamicamente */
+/* #2 Criando um botão dinamicamente para marcar os feriados no calendário*/
 
 const divBotao = document.querySelector('.buttons-container');
 criadorDeFuncoes('button', divBotao);
-const botao = document.querySelector('button');
-botao.setAttribute('id', 'btn-holiday');
-botao.innerText = 'Feriados';
+const botao1 = document.querySelector('button');
+botao1.setAttribute('id', 'btn-holiday');
+botao1.innerText = 'Feriados';
 
 /* #3 Criando uma função para alterar a cor de fundo de determinados dias */
 
 function alteraCorDeFundo() {
   const finalDeSemana = document.getElementsByClassName('day holiday');
-  botao.addEventListener('click', function() {
+  botao1.addEventListener('click', function() {
     for (let index = 0; index < finalDeSemana.length; index += 1) {
       if (finalDeSemana[index].style.backgroundColor === 'lightgreen') {
         finalDeSemana[index].style.backgroundColor = 'rgb(238,238,238)';
@@ -73,3 +73,9 @@ function alteraCorDeFundo() {
 
 alteraCorDeFundo()
 
+/* #4 Criando um novo botão dinamicamente para marcar todas as sextas-feiras no calendário*/
+
+criadorDeFuncoes('button', divBotao);
+const botao2 = document.querySelectorAll('button');
+botao2[1].setAttribute('id', 'btn-friday');
+botao2[1].innerText = 'Sexta-feira';
