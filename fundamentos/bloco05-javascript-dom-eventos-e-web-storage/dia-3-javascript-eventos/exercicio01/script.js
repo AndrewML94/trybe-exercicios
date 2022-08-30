@@ -24,11 +24,13 @@ function criadorDeFuncoes (tag, elementoPai) {
 
 let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 const dia = document.getElementById('days');
+let dia2;
+let dia3;
 
 function criaLi() {
   for (let index = 0; index < decemberDaysList.length; index += 1) {
-    const dia2 = decemberDaysList[index];
-    const dia3 = document.createElement('li');
+    dia2 = decemberDaysList[index];
+    dia3 = document.createElement('li');
     dia3.innerHTML = dia2;
     dia.appendChild(dia3);
     if (dia2 === 24 || dia2 === 25 || dia2 === 31) {
@@ -53,3 +55,21 @@ criadorDeFuncoes('button', divBotao);
 const botao = document.querySelector('button');
 botao.setAttribute('id', 'btn-holiday');
 botao.innerText = 'Feriados';
+
+/* #3 Criando uma função para alterar a cor de fundo de determinados dias */
+
+function alteraCorDeFundo() {
+  const finalDeSemana = document.getElementsByClassName('day holiday');
+  botao.addEventListener('click', function() {
+    for (let index = 0; index < finalDeSemana.length; index += 1) {
+      if (finalDeSemana[index].style.backgroundColor === 'lightgreen') {
+        finalDeSemana[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        finalDeSemana[index].style.backgroundColor = 'lightgreen';
+      }
+    }
+  })
+}
+
+alteraCorDeFundo()
+
