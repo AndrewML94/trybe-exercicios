@@ -33,11 +33,14 @@ function criaLi() {
     dia3 = document.createElement('li');
     dia3.innerHTML = dia2;
     dia.appendChild(dia3);
-    if (dia2 === 24 || dia2 === 25 || dia2 === 31) {
+    if (dia2 === 24 || dia2 === 31) {
       dia3.className = 'day holiday';
       dia.appendChild(dia3)
-    } else if (dia2 === 4 || dia2 === 11 || dia2 === 18 || dia2 === 25) {
+    } else if (dia2 === 4 || dia2 === 11 || dia2 === 18) {
       dia3.className = 'day friday';
+      dia.appendChild(dia3);
+    } else if (dia2 === 25) {
+      dia3.className = 'day holiday friday';
       dia.appendChild(dia3);
     } else {
       dia3.className = 'day';
@@ -57,9 +60,9 @@ botao1.setAttribute('id', 'btn-holiday');
 botao1.innerText = 'Feriados';
 
 /* #3 Criando uma função para alterar a cor de fundo de determinados dias */
+const finalDeSemana = document.getElementsByClassName('day holiday', 'day holiday friday');
 
 function alteraCorDeFundo() {
-  const finalDeSemana = document.getElementsByClassName('day holiday');
   botao1.addEventListener('click', function() {
     for (let index = 0; index < finalDeSemana.length; index += 1) {
       if (finalDeSemana[index].style.backgroundColor === 'lightgreen') {
@@ -79,3 +82,21 @@ criadorDeFuncoes('button', divBotao);
 const botao2 = document.querySelectorAll('button');
 botao2[1].setAttribute('id', 'btn-friday');
 botao2[1].innerText = 'Sexta-feira';
+
+/* #5 Criando uma função para alterar o texto dos dias referente a sexta-feira */
+
+function alteraTexto(sextas) {
+  const sexta = document.getElementsByClassName('day friday', 'day holiday friday');
+  botao2[1].addEventListener('click', function() {
+    for (let index = 0; index < sexta.length; index += 1) {
+      if (sexta[index].innerText !== 'Sextou o/') {
+        sexta[index].innerText = 'Sextou o/'
+      } else {
+        sexta[index].innerText = sextas[index];
+      }
+    }
+  })
+}
+
+let sextasDeDezembro = [4, 11, 18, 25]
+alteraTexto(sextasDeDezembro)
