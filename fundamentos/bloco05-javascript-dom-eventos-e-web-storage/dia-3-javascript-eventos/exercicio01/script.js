@@ -119,10 +119,10 @@ const divTarefa = document.querySelector('.my-tasks');
 function descritivoDeTarefa (nomeTarefa) {
   const span = document.createElement('span');
   const tarefa = span.innerText = nomeTarefa;
-  divTarefa.appendChild(span, tarefa)
+  divTarefa.appendChild(span, tarefa);
 };
 
-descritivoDeTarefa('Buscar o Tiri na creche')
+descritivoDeTarefa('Buscar o Tiri na creche');
 
 /* #8 Criando uma função para legenda com cor */
 
@@ -137,10 +137,9 @@ alteraCor()
 
 /* #9 Criando uma função para que ao clicar na dor ao lado da tarefa, ele mude a sua classe */
 
-const divSelecionaCor = document.querySelector('.task')
+const divSelecionaCor = document.querySelector('.task');
 
 divSelecionaCor.addEventListener('click', function() {
-  // divSelecionaCor.className = 'task selected';
   if (divSelecionaCor.className === 'task') {
     divSelecionaCor.className = 'task selected';
   } else {
@@ -148,4 +147,12 @@ divSelecionaCor.addEventListener('click', function() {
   }
 })
 
+/* #10 Criando uma função que ao clicar na 'bolinha', abra a possibilidade para que os dias selecionados no calendário fiquem com a cor da 'bolinha' */
 
+zoomDias.addEventListener('click', function(pintar) {
+  if (divSelecionaCor.className === 'task selected') {
+    pintar.target.style.color = 'blue';
+  } else {
+    pintar.target.style.color = 'rgb(119,119,119)';
+  }
+})
