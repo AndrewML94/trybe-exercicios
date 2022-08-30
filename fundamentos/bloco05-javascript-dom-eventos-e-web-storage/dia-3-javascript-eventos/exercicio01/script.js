@@ -134,3 +134,18 @@ function alteraCor() {
 }
 
 alteraCor()
+
+/* #9 Criando uma função para que ao clicar na dor ao lado da tarefa, ele mude a sua classe */
+
+const divSelecionaCor = document.querySelector('.task')
+
+divSelecionaCor.addEventListener('click', function() {
+  // divSelecionaCor.className = 'task selected';
+  if (divSelecionaCor.className === 'task') {
+    divSelecionaCor.className = 'task selected';
+  } else {
+    divSelecionaCor.className = 'task';
+  }
+})
+
+
