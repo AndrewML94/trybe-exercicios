@@ -98,10 +98,10 @@ function alteraTexto(sextas) {
   })
 }
 
-let sextasDeDezembro = [4, 11, 18, 25]
-alteraTexto(sextasDeDezembro)
+let sextasDeDezembro = [4, 11, 18, 25];
+alteraTexto(sextasDeDezembro);
 
-/* #6 Criando duas funções que irão dar zoom nos dias em que o mouse passar */
+/* #6 Criando zoom in e zoom out nos dias em que o mouse passar */
 
 const zoomDias = document.querySelector('#days')
 
@@ -113,3 +113,13 @@ zoomDias.addEventListener('mouseout', function(zoom1) {
   zoom1.target.style.fontSize = '';
 })
 
+/* #7 Criando uma função para adicionar uma tarefa personalizada ao calendário */
+
+function descritivoDeTarefa (nomeTarefa) {
+  const divTarefa = document.querySelector('.my-tasks');
+  const span = document.createElement('span');
+  const tarefa = span.innerText = nomeTarefa;
+  divTarefa.appendChild(span, tarefa)
+};
+
+descritivoDeTarefa('Buscar o Tiri na creche')
