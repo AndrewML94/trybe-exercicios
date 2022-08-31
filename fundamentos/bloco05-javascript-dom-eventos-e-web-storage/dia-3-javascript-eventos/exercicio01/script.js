@@ -156,3 +156,30 @@ zoomDias.addEventListener('click', function(pintar) {
     pintar.target.style.color = 'blue';
   }
 })
+
+/* #11 Criando uma função que permite criar uma lista de compromissos, digitada pela pessoa usuária */
+function adicionandoNovoCompromisso() {
+  const input = document.querySelector('#task-input');
+  const botaoAdicionar = document.querySelector('#btn-add');
+  const ul2 = document.querySelector('.task-list');
+  botaoAdicionar.addEventListener('click', function() {
+    if (input.value.length > 0) {
+      const li = document.createElement('li');
+      li.innerText = input.value;
+      ul2.appendChild(li);
+      input.value = '';
+    } else {
+      alert('Error: Não há possibilidade de adicionar compromisso sem nada escrito!!!');
+    }
+  });
+  input.addEventListener('keyup', function(compromisso) {
+    if (compromisso.key === 'Enter' && input.value.length > 0) {
+      const li = document.createElement('li');
+      li.innerText = getInputField.value;
+      ul2.appendChild(li);
+      input.value = '';
+    }
+  });
+}
+
+adicionandoNovoCompromisso();
