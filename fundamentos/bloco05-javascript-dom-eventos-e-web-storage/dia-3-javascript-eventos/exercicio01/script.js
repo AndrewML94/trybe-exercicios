@@ -150,9 +150,9 @@ divSelecionaCor.addEventListener('click', function() {
 /* #10 Criando uma função que ao clicar na 'bolinha', abra a possibilidade para que os dias selecionados no calendário fiquem com a cor da 'bolinha' */
 
 zoomDias.addEventListener('click', function(pintar) {
-  if (divSelecionaCor.className === 'task selected') {
-    pintar.target.style.color = 'blue';
-  } else {
+  if (divSelecionaCor.className === 'task selected' && pintar.target.style.color === 'blue') {
     pintar.target.style.color = 'rgb(119,119,119)';
+  } else if (divSelecionaCor.className === 'task selected'){
+    pintar.target.style.color = 'blue';
   }
 })
