@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: antiquewhite;
+}
+
+header {
+  margin: 30px auto;
+  width: 40%;
+}
+
+h1 {
+  padding: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+main {
+  margin: 20px auto;
+  width: 40%;
+  border: solid 3px black;
+  padding: 15px;
+  background-color: bisque;
+}
+
+#name, #email, #answer {
+  width: 100%;
+  margin: 5px 0;
+}
+
+#travel01, #travel02, #travel03, #travel04 {
+  margin: 12px;
+}
+
+#option01, #option02, #date {
+  margin: 5px 0;
+}
+
+#button {
+  margin: 0 auto;
+  display: flex;
+  width: 200px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 0 0;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
