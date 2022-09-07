@@ -23,7 +23,7 @@ buttonClear.addEventListener('click', function(event) {
 
 buttonSubmit.addEventListener('click', function() {
   if (option2.checked) {
-    form.submit()
+    form.submit();
     alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.')
   }
 })
