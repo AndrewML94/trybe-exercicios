@@ -1,0 +1,19 @@
+body {
+  background-color: #41197f;
+}
+
+h1, p {
+  margin-top: 50px;
+  color: white;
+}
+form {
+  margin-bottom: 50px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 8px;
+}

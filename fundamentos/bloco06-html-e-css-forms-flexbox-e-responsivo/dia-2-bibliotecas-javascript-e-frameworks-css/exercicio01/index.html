@@ -11,44 +11,55 @@
 <body>
   <header class="container">
     <h1 class="text-center">Concurso TrybeTrip!!!</h1>
-    <p>Você já imaginou ganhar uma viagem com tudo pago? Então esta é a sua oportunidade, bastando o preenchimento do formulário abaixo. Lembrando que o sorteio ocorre pela loteria federal.</p>
+    <p>Você já imaginou ganhar uma viagem com tudo pago? Então esta é a sua oportunidade, bastando o preenchimento do formulário abaixo. Lembrando que o sorteio ocorre pela Loteria Federal.</p>
   </header>
   <main>
     <section>
       <form action="" method="get" id="my-form" class="container form-control">
         <div>
           <label for="name">Nome:</label>
-          <input type="text" placeholder="Nome completo" minlength="10" maxlength="40" required name="name" id="name">
+          <input class="input-group" type="text" placeholder="Nome completo" minlength="10" maxlength="40" required name="name" id="name">
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" placeholder="nome@gmail.com" minlength="10" maxlength="50" required name="email" id="email">
+          <input class="input-group" type="email" placeholder="nome@gmail.com" minlength="10" maxlength="50" required name="email" id="email">
         </div>
         <div>
-        <div>
-          <label for="travel01"><input type="radio" required name="travel" value="flo" id="travel01">Florianópolis</label>
-          <label for="travel02"><input type="radio" required name="travel" value="gra" id="travel02">Gramado</label>
-          <label for="travel03"><input type="radio" required name="travel" value="for" id="travel03">Fortaleza</label>
-          <label for="travel04"><input type="radio" required name="travel" value="rio" id="travel04">Rio de Janeiro</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" required name="travel" value="flo" id="travel01">
+          <label class="form-check-label" for="travel01">Florianópolis</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" required name="travel" value="gra" id="travel02">
+          <label class="form-check-label" for="travel02">Gramado</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" required name="travel" value="for" id="travel03">
+          <label class="form-check-label" for="travel03">Fortaleza</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" required name="travel" value="rio" id="travel04">
+          <label class="form-check-label" for="travel04">Rio de Janeiro</label>
         </div>
         <div>
           <label for="answer">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? </label>
-          <textarea name="answer" id="answer" maxlength="500" required cols="30" rows="10"></textarea>
+          <textarea class="input-group" name="answer" id="answer" maxlength="500" required cols="30" rows="10"></textarea>
         </div>
         <div>
           <label for="date">Qual a melhor data para realizar sua viagem?</label>
           <input type="date" placeholder="dd/mm/aaaa" name="date" required id="date">
         </div>
         <div>
-          <input type="checkbox" name="option01" required id="option01">
-          <label for="option01">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+          <input class="form-check-input" type="checkbox" name="option01" required id="option01">
+          <label class="form-check-label" for="option01">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
         </div>
         <div>
-          <input type="checkbox" name="option02" required id="option02">
-          <label for="option02">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros</label>
+          <input class="form-check-input" type="checkbox" name="option02" required id="option02">
+          <label class="form-check-label" for="option02">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros</label>
         </div>
-        <div id="button">
-          <button id="btnSubmit">Enviar</button>
+        <div class = "d-grid gap-2">
+          <button class="btn btn-success" id="btnSubmit">Enviar</button>
+          <button class="btn btn-secondary" id="btnClear">Limpar</button>
         </div>
       </form>
     </section>
