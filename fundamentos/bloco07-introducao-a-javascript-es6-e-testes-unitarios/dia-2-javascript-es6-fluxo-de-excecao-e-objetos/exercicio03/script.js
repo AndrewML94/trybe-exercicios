@@ -22,4 +22,10 @@ const lesson3 = {
 
 const turno = (nameObj, chave, valor) => nameObj[chave] = valor;
 
-turno(lesson2, 'turno', 'noite')
+turno(lesson2, 'turno', 'noite');
+
+//Criar uma função que liste as keys de um objeto//
+
+const chaves = (nameObj) => Object.keys(nameObj);
+
+chaves(lesson1);
