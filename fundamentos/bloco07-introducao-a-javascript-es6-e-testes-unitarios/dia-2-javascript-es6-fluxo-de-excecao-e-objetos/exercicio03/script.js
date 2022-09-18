@@ -29,3 +29,9 @@ turno(lesson2, 'turno', 'noite');
 const chaves = (nameObj) => Object.keys(nameObj);
 
 chaves(lesson1);
+
+//Cirar uma função que mostre o tamanho do objeto//
+
+const tamanho = (nameObj) => Object.keys(nameObj).length;
+
+tamanho(lesson1);
