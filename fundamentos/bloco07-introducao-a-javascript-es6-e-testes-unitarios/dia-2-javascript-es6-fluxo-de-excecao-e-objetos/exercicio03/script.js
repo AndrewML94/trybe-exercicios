@@ -35,3 +35,8 @@ chaves(lesson1);
 const tamanho = (nameObj) => Object.keys(nameObj).length;
 
 tamanho(lesson1);
+
+//Criar uma função que liste os valores de um objeto//
+
+const valores = (nameObj) => Object.values(nameObj);
+valores(lesson3);
