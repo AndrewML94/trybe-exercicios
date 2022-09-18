@@ -40,3 +40,8 @@ tamanho(lesson1);
 
 const valores = (nameObj) => Object.values(nameObj);
 valores(lesson3);
+
+//Criar uma função que agrupará todas as aulas em um novo objeto//
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+console.log(allLessons)
