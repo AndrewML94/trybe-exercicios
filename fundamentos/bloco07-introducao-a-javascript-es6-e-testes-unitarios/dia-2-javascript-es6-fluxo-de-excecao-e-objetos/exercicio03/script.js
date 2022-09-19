@@ -20,26 +20,26 @@ const lesson3 = {
 
 //Criar uma função para adicionar um turno no obj lesson2//
 
-const turno = (nameObj, chave, valor) => nameObj[chave] = valor;
+const shift = (nameObj, keys, value) => nameObj[keys] = value;
 
-turno(lesson2, 'turno', 'noite');
+shift(lesson2, 'turno', 'noite');
 
 //Criar uma função que liste as keys de um objeto//
 
-const chaves = (nameObj) => Object.keys(nameObj);
+const keys = (nameObj) => Object.keys(nameObj);
 
-chaves(lesson1);
+keys(lesson1);
 
 //Cirar uma função que mostre o tamanho do objeto//
 
-const tamanho = (nameObj) => Object.keys(nameObj).length;
+const size = (nameObj) => Object.keys(nameObj).length;
 
-tamanho(lesson1);
+size(lesson1);
 
 //Criar uma função que liste os valores de um objeto//
 
-const valores = (nameObj) => Object.values(nameObj);
-valores(lesson3);
+const values = (nameObj) => Object.values(nameObj);
+values(lesson3);
 
 //Criar uma função que agrupará todas as aulas em um novo objeto//
 
@@ -47,11 +47,16 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
 //Criar uma função para retornar a soma de todos os estudantes em todas as aulas//
 
-const totalAlunos = () => `O total de alunos nas aulas é de: ${lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes}`;
-totalAlunos();
+const totalStudents = () => `O total de alunos nas aulas é de: ${allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes}`;
+totalStudents();
 
 // Criar uma função para obter o valor de chave com base na sua posição//
 
-const matriz = (nameObj ,param1) => Object.values(nameObj)[param1]; 
+const getValueByNumber = (nameObj ,param1) => Object.values(nameObj)[param1]; 
 
-console.log(matriz(lesson1, 0));
+getValueByNumber(lesson1, 0);
+
+//Criar uma função para verificar se chave/valor existe na função//
+
+const verifyPair = (nameObj, param1, param2) => Object.keys(nameObj).includes(param1) && Object.values(nameObj).includes(param2) ? 'True' : 'False';
+verifyPair(lesson3, 'materia', 'Maria Clara');
