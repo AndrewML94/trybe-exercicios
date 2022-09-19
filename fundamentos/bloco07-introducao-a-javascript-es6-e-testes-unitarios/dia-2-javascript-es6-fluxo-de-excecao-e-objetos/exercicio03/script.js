@@ -48,5 +48,10 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 //Criar uma função para retornar a soma de todos os estudantes em todas as aulas//
 
 const totalAlunos = () => `O total de alunos nas aulas é de: ${lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes}`;
-console.log(totalAlunos())
+totalAlunos();
 
+// Criar uma função para obter o valor de chave com base na sua posição//
+
+const matriz = (nameObj ,param1) => Object.values(nameObj)[param1]; 
+
+console.log(matriz(lesson1, 0));
