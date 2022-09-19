@@ -72,12 +72,35 @@ verifyPair(lesson3, 'materia', 'Maria Clara');
 
 const contStudents = (nameObj) => {
   let count = 0;
-  const array = Object.keys(nameObj);
-  for (index in array) {
-    if(nameObj[array[index]].materia === 'Matemática'){
-    count += nameObj[array[index]].numeroEstudantes;
+  const value = Object.keys(nameObj);
+  for (index in value) {
+    if(nameObj[value[index]].materia === 'Matemática'){
+    count += nameObj[value[index]].numeroEstudantes;
     }
   }
   return `${count} alunos assistiram as aulas de Matemática.`;
 }
 contStudents(allLessons);
+
+//4.2 Criar uma função que retorna um relatório do professor//
+
+const getInfo = (nameObj, name) => {
+  const allLessons = [];
+  let allStudent = 0;
+  const value = Object.values(nameObj);
+  for (index in value) {
+    if (value[index].professor === name) {
+      allLessons.push(value[index].materia)
+      allStudent += value[index].numeroEstudantes;
+    }
+  }
+  return {lessons: allLessons, estudantes: allStudent};
+}
+
+const createReport = (allLessons, name) => {
+  const report = {};
+  report.professor = name;
+  Object.assign(report, getInfo(allLessons, name));
+  return report;
+}
+console.log(createReport(allLessons, 'Maria Clara'));
