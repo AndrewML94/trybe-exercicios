@@ -102,7 +102,15 @@ console.log(getNamedBook());
 // #4  Ordene os livros por data de lançamento em ordem decrescente. 
 
 function booksOrderedByReleaseYearDesc() {
-  return books.sort((a, b) => a.releaseYear - b.releaseYear);
+  return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 
 console.log(booksOrderedByReleaseYearDesc());
+
+// #5 Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+
+function everyoneWasBornOnSecXX() {
+  return books.every((bornSecXX) => bornSecXX.releaseYear > 1900 || bornSecXX.releaseYear < 2000)
+}
+
+console.log(everyoneWasBornOnSecXX());
