@@ -86,3 +86,15 @@ function smallerName() {
 }
 
 console.log(smallerName());
+
+// #3 Encontre o primeiro livro cujo nome possui 26 caracteres. 
+
+function getNamedBook() {
+  let nameBook;
+  books.forEach((book) => {
+    if (book.name.length === 26) nameBook = `O livro com o nome contendo 26 caracteres é: ${book.name}.`
+  });
+  return nameBook;
+}
+
+console.log(getNamedBook());
