@@ -73,8 +73,6 @@ function authorBornIn1947() {
   return nameAuthor
 }
 
-console.log(authorBornIn1947());
-
 // #2 Retorne o nome do livro de menor nome. 
 
 function smallerName() {
@@ -84,8 +82,6 @@ function smallerName() {
   });
   return `O livro com o menor nome é: ${nameBook}.`;
 }
-
-console.log(smallerName());
 
 // #3 Encontre o primeiro livro cujo nome possui 26 caracteres. 
 
@@ -97,23 +93,17 @@ function getNamedBook() {
   return nameBook;
 }
 
-console.log(getNamedBook());
-
 // #4  Ordene os livros por data de lançamento em ordem decrescente. 
 
 function booksOrderedByReleaseYearDesc() {
   return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 
-console.log(booksOrderedByReleaseYearDesc());
-
 // #5 Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
 
 function everyoneWasBornOnSecXX() {
-  return books.every((bornSecXX) => bornSecXX.releaseYear >= 1900 && bornSecXX.releaseYear < 2000)
+  return books.every((bornSecXX) => bornSecXX.author.birthYear >= 1900 && bornSecXX.author.birthYear < 2000)
 }
-
-console.log(everyoneWasBornOnSecXX());
 
 // 6# Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário. 
 
@@ -121,4 +111,8 @@ function someBookWasReleaseOnThe80s() {
   return books.some((bornSecXX) => bornSecXX.releaseYear >= 1980 && bornSecXX.releaseYear < 1990)
 }
 
-console.log(someBookWasReleaseOnThe80s());
+// #7 Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário. 
+
+function authorUnique() {
+  return books.every((book) => !books.some((bookSome) => (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+}
