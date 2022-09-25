@@ -98,3 +98,11 @@ function getNamedBook() {
 }
 
 console.log(getNamedBook());
+
+// #4  Ordene os livros por data de lançamento em ordem decrescente. 
+
+function booksOrderedByReleaseYearDesc() {
+  return books.sort((a, b) => a.releaseYear - b.releaseYear);
+}
+
+console.log(booksOrderedByReleaseYearDesc());
