@@ -83,3 +83,10 @@ function fantasyOrScienceFiction() {
   const filter = books.filter((genre) => genre.genre === 'Fantasia' || genre.genre === 'Ficção Científica');
   return filter;
 }
+
+// #4 Crie um array formado pelos livros com mais de 60 anos desde sua publicação. Esse array deve ser ordenado do livro mais velho ao mais novo.
+
+function oldBooksOrdered() {
+  const filter = books.filter((element) => element.releaseYear <= 1962).sort((a, b) => a.releaseYear - b.releaseYear);
+  return filter;
+}
