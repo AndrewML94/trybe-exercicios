@@ -96,9 +96,7 @@ function oldBooksOrdered() {
 function fantasyOrScienceFictionAuthors() {
   const formated = [];
   books.filter((author) => {
-    if (author.genre === 'Fantasia' || author.genre === 'Ficção Científica') {
-      formated.push(author.author.name);
-    }
+    if (author.genre === 'Fantasia' || author.genre === 'Ficção Científica') formated.push(author.author.name);
   });
   return formated.sort();
 }
@@ -108,9 +106,13 @@ function fantasyOrScienceFictionAuthors() {
 function oldBooks() {
   const old = [];
   books.filter((nameBook) => {
-    if (nameBook.releaseYear <= 1962) {
-      old.push(nameBook.name);
-    }
+    if (nameBook.releaseYear <= 1962) old.push(nameBook.name);
   });
   return old;
+}
+
+// #7 Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. 
+
+function authorWith3DotsOnName() {
+  return books.find((book) => (book.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3)).name;
 }
