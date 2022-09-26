@@ -90,3 +90,15 @@ function oldBooksOrdered() {
   const filter = books.filter((element) => element.releaseYear <= 1962).sort((a, b) => a.releaseYear - b.releaseYear);
   return filter;
 }
+
+// #5 Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia. 
+
+function fantasyOrScienceFictionAuthors() {
+  const formated = [];
+  books.filter((author) => {
+    if (author.genre === 'Fantasia' || author.genre === 'Ficção Científica') {
+      formated.push(author.author.name);
+    }
+  });
+  return formated.sort();
+}
