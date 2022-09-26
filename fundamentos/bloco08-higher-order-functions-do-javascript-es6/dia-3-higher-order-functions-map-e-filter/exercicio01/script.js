@@ -102,3 +102,15 @@ function fantasyOrScienceFictionAuthors() {
   });
   return formated.sort();
 }
+
+// #6 Crie um array com o nome de todos os livros com mais de 60 anos de publicação. 
+
+function oldBooks() {
+  const old = [];
+  books.filter((nameBook) => {
+    if (nameBook.releaseYear <= 1962) {
+      old.push(nameBook.name);
+    }
+  });
+  return old;
+}
