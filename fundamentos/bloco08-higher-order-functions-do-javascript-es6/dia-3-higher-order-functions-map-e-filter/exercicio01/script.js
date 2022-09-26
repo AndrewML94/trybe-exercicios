@@ -76,3 +76,10 @@ const nameAndAge = books.map((element) => {
   formated.author = element.author.name;
   return formated;
 }).sort((a, b) => a.age - b.age);
+
+// #3 Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia. 
+
+function fantasyOrScienceFiction() {
+  const filter = books.filter((genre) => genre.genre === 'Fantasia' || genre.genre === 'Ficção Científica');
+  return filter;
+}
