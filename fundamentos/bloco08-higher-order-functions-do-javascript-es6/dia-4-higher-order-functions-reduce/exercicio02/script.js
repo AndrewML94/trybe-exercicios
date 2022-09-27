@@ -64,6 +64,13 @@ const books = [
 // #1 Crie uma string com os nomes de todas as pessoas autoras.
 
 function reduceNames() {
-  const filterNames = books.map((names) => names.author.name);
-  return filterNames.reduce((element, acc) => `${element}, ${acc}`)
+  const nameFilter = books.map((names) => names.author.name);
+  return nameFilter.reduce((element, acc) => `${element}, ${acc}`);
+}
+
+// #2 Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+
+function averageAge() {
+  const ageFilter = books.map((age) => age.releaseYear - age.author.birthYear);
+  return ageFilter.reduce((number1, number2) => number1 !== number2 ? number1 + number2 : number1) / ageFilter.length;
 }
