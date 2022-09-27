@@ -64,8 +64,8 @@ const books = [
 // #1 Crie uma string com os nomes de todas as pessoas autoras.
 
 function reduceNames() {
-  const nameFilter = books.map((names) => names.author.name);
-  return nameFilter.reduce((element, acc) => `${element}, ${acc}`);
+  const nameAuthorFilter = books.map((name) => name.author.name);
+  return nameAuthorFilter.reduce((element, acc) => `${element}, ${acc}`);
 }
 
 // #2 Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
@@ -73,4 +73,11 @@ function reduceNames() {
 function averageAge() {
   const ageFilter = books.map((age) => age.releaseYear - age.author.birthYear);
   return ageFilter.reduce((number1, number2) => number1 !== number2 ? number1 + number2 : number1) / ageFilter.length;
+}
+
+// #3 Encontre o livro com o maior nome. 
+
+function longestNamedBook() {
+  const nameBookFilter = books.map((name) => name.name);
+  return nameBookFilter.reduce((element1, element2) => element1.length > element2.length ? element1 : element2);
 }
