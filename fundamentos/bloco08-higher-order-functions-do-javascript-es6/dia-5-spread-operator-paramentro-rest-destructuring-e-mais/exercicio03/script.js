@@ -16,3 +16,13 @@ let bebida = 'arroz';
 
 const all = [comida, animal, bebida];
 const [animal1, bebida1, comida1] = all;
+
+// #3 O array abaixo possui alguns números que não condizem com o conteúdo que ele deveria possuir. Através de array destructuring, faça com que existam apenas números pares na variável numerosPares. 
+
+let numerosPares = [1, 3, 5, 6, 8, 10, 12];
+
+console.log(numerosPares); // [6, 8, 10, 12];
+
+// Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
+
+const [ , , ,num1, num2, num3, num4] = numerosPares;
