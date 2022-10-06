@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /* Criando as variáveis e funções para automatizar a conclusão dos exercícios */
+
+      const body = document.querySelector('body');
+      const script = document.querySelector('script');
+      function criadorDeElementos(tag, elementoPai, adicionaAntes) {
+        const elemento = document.createElement(tag);
+        elementoPai.insertBefore(elemento, adicionaAntes);
+      }
+      function criadorDeElementosDentroTag(tag, elementoPai) {
+        const elemento = document.createElement(tag);
+        elementoPai.appendChild(elemento);
+      }
+      function escrita (tag, index, mensagem) {
+        document.querySelectorAll(tag)[index].innerText = mensagem;
+      }
+
+      /* #1 Adicionando a tag <h1> com texto */
+      
+      criadorDeElementos('h1', body, script);
+      const h1 = document.querySelector('h1');
+      escrita('h1', 0, 'Exercício 5.2 - JavaScript DOM');
+
+      /* #2 Adicionando a tag <main> com a classe main-content como filho da tag <body> */
+
+      criadorDeElementos('main', body, script);
+      const main = document.querySelector('main');
+      main.classList.add('main-content');
+      
+      /* #3 Adicionando a tag <section> com a classe center-content como filho da tag <main> */
+
+      criadorDeElementosDentroTag('section', main);
+      const section1 = document.querySelectorAll('section')[0];
+      section1.classList.add('center-content');
+
+      /* #4 Adicionando a tag <p> como filho da tag <section> */
+      
+      criadorDeElementosDentroTag('p', section1);
+      const p = document.querySelector('p');
+
+      /* #5 Adicionando a tag <section> com a classe left-content como filho da tag <main> */
+
+      criadorDeElementosDentroTag('section', main);
+      const section2 = document.querySelectorAll('section')[1];
+      section2.classList.add('left-content');
+
+      /* #6 Adicionando a tag <section> com a classe right-content como filho da tag <main> */
+
+      criadorDeElementosDentroTag('section', main);
+      const section3 = document.querySelectorAll('section')[2];
+      section3.classList.add('right-content');
+
+      /* #7 Adicionando uma imagem com a tag src e deve ser filho da tag <section> */
+
+      criadorDeElementosDentroTag('img', section2);
+      const img = document.querySelector('img');
+      img.classList.add('small-image');
+      img.src = 'https://picsum.photos/200';
+
+      /* #8 Adicionando uma tag <ul> com valores de 1 a 10 sendo filha da tag <section> */
+
+      criadorDeElementosDentroTag('ul', section3);
+      const ul = document.querySelector('ul');
+      ul.classList.add('small-list');
+      const numeros = [
+        'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      const lista1 = document.querySelector('.small-list');
+      for (let index = 0; index < numeros.length; index += 1) {
+        let lista2 = numeros[index];
+        let lista3 = document.createElement('li');
+        lista3.innerText = lista2;
+        lista3.className = 'listaDescricao';
+        lista1.appendChild(lista3);
+      }
+      
+
+      /* #9 Adicionando 3 tags <h3> como filho da tag <main> */
+
+      criadorDeElementosDentroTag('h3', main);
+      const h31 = document.querySelectorAll('h3')[0];
+      criadorDeElementosDentroTag('h3', main);
+      const h32 = document.querySelectorAll('h3')[1];
+      criadorDeElementosDentroTag('h3', main); 
+      const h33 = document.querySelectorAll('h3')[2];   
+
+      /* #10 Adicionando a classe title na tag <h1> */
+
+      h1.classList.add('title');
+
+      /* #11 Adicionando a classe description nas 3 tags <h3> */
+      
+      h31.classList.add('description');
+      h32.classList.add('description');
+      h33.classList.add('description');
+
+      /* #12 Removendo a tag <section> com a classe left-content */
+
+      main.removeChild(section2);
+
+      /* #13 Centralizando a tag <section> com a classe rigth-content */
+
+      section3.style.marginRight = 'auto';
+
+      /* #14 Trocando a cor de fundo do elemento pai da <section> da classe center-content */
+
+      main.style.backgroundColor = 'green';
+
+      /* #15 Removendo os 2 últimos elementos */
+      
+      ul.removeChild(ul.lastChild);
+      ul.removeChild(ul.lastChild);
+
+    </script>
+  </body>
+</html>
