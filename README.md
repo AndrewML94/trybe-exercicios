@@ -10,267 +10,267 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 1: Introdução - Unix & Shell
 
-- [X] 1-3: _Unix & Shell- Part 1_
-- [X] 1-4: _Unix & Shell- Part 2_
+- [X] Dia 3: _Unix & Shell- Part 1_
+- [X] Dia 4: _Unix & Shell- Part 2_
 
 ##### Seção 2: Git & GitHub
 
-- [X] 2-1: _O que são e para que serve?_
-- [X] 2-2: _Entendendo os comandos_
-- [X] 2-3: _Internet - Entendendo como ela funciona_
+- [X] Dia 1: _O que são e para que serve?_
+- [X] Dia 2: _Entendendo os comandos_
+- [X] Dia 3: _Internet - Entendendo como ela funciona_
 
 ##### Seção 3: Introdução - HTML & CSS
 
-- [X] 3-1: _HTML & CSS - Estruturas de página_
-- [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned]()_
+- [X] Dia 1: _HTML & CSS - Estruturas de página_
+- [X] Dia 2: _HTML & CSS - Primeiros passos em CSS_
+- [X] Dia 3: _HTML & CSS - Seletores e posicionamento_
+- [X] Dia 4: _HTML Semântico_
+- [X] Dia 5: _[Projeto - Lessons Learned]()_
 
 ##### Seção 4: Introdução - JavaScript e Lógica de programação
 
-- [X] 4-1: _JavaScript - Primeiros passos_
-- [X] 4-2: _JavaScript - Array e loop For_
-- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [X] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions]()_
+- [X] Dia 1: _JavaScript - Primeiros passos_
+- [X] Dia 2: _JavaScript - Array e loop For_
+- [X] Dia 3: _JavaScript - Lógica de Programação e Algoritmos_
+- [X] Dia 4: _JavaScript - Objetos e funções_
+- [X] Dia 5: _[Projeto - Playground Functions]()_
 
 ##### Seção 5: Introdução - JavaScript: DOM, Eventos e Web Storage
 
-- [X] 5-1: _JavaScript - DOM e seletores_
-- [X] 5-2: _JavaScript - Trabalhando com elementos_
-- [X] 5-3: _JavaScript - Eventos_
-- [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Arte com Pixel]()_
+- [X] Dia 1: _JavaScript - DOM e seletores_
+- [X] Dia 2: _JavaScript - Trabalhando com elementos_
+- [X] Dia 3: _JavaScript - Eventos_
+- [X] Dia 4: _JavaScript - Web Storage_
+- [X] Dia 5: _[Projeto - Arte com Pixel]()_
 
 ##### Seção 6: HTML & CSS: Forms, Flexbox e Responsivo
 
-- [X] 6-1: _HTML & CSS - Forms_
-- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [X] 6-3: _CSS Flexbox - Part 1_
-- [X] 6-4: _CSS Flexbox - Part 2_
-- [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Trybewarts]()_
+- [X] Dia 1: _HTML & CSS - Forms_
+- [X] Dia 2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] Dia 3: _CSS Flexbox - Part 1_
+- [X] Dia 4: _CSS Flexbox - Part 2_
+- [X] Dia 5: _CSS Responsivo - Mobile First_
+- [X] Dia 6: _[Projeto - Trybewarts]()_
 
 ##### Seção 7: JavaScript ES6 & Testes Unitários
 
-- [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [X] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
-- [X] 7-3: _Primeiros passos em Jest_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] Dia 1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [X] Dia 2: _JavaScript ES6 - Fluxo de exceção e Objetos_
+- [X] Dia 3: _Primeiros passos em Jest_
+- [X] Dia 4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Seção 8: JavaScript ES6
 
-- [X] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
-- [X] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [X] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-6: _[Projeto - Zoo functions]()_
+- [X] Dia 1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [X] Dia 2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [X] Dia 3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [X] Dia 4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [X] Dia 5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [X] Dia 6: _[Projeto - Zoo functions]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ##### Seção 1: JavaScript e Testes Assíncronos
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Assíncrono - Fetch API e asyns/await_
-- [ ] 9-2: _Jest - Testes Assíncronos_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [X] Dia 1: _JavaScript Assíncrono e Callbacks_
+- [ ] Dia 2: _JavaScript Assíncrono - Fetch API e asyns/await_
+- [ ] Dia 2: _Jest - Testes Assíncronos_
+- [ ] Dia 3: _[Projeto - Carrinho de Compras]()_
 
 ##### Seção 2: Introdução à React
 
-- [ ] 10-1: _'Hello, world' no React!_
-- [ ] 10-2: _Componentes React_
-- [ ] 10-3: _[Projeto - Sistema Solar]()_
+- [ ] Dia 1: _'Hello, world' no React!_
+- [ ] Dia 2: _Componentes React_
+- [ ] Dia 3: _[Projeto - Sistema Solar]()_
 
 ##### Seção 3: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 11-1: _'Componentes com estado e eventos_
-- [ ] 11-2: _Formulários no React_
-- [ ] 11-3: _[Projeto - Tryunfo]()_
+- [ ] Dia 1: _'Componentes com estado e eventos_
+- [ ] Dia 2: _Formulários no React_
+- [ ] Dia 3: _[Projeto - Tryunfo]()_
 
 ##### Seção 4: Ciclo de Vida de Componentes e React Router
 
-- [ ] 12-1: _Ciclo de vida de componentes_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _[Projeto - TrybeTunes]()_
+- [ ] Dia 1: _Ciclo de vida de componentes_
+- [ ] Dia 2: _React Router_
+- [ ] Dia 3: _[Projeto - TrybeTunes]()_
 
 ##### Seção 5: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] Dia 1: _Metodologias Ágeis_
+- [ ] Dia 2: _[Projeto - Frontend Online Store]()_
 
 ##### Seção 6: Testes automatizados com React Testing Library
 
-- [ ] 14-1: _RTL - Primeiros passos_
-- [ ] 14-2: _RTL - Mocks e Inputs_
-- [ ] 14-3: _RTL - Testado React Router_
-- [ ] 14-4: _[Projeto - Testes em React]()_
+- [ ] Dia 1: _RTL - Primeiros passos_
+- [ ] Dia 2: _RTL - Mocks e Inputs_
+- [ ] Dia 3: _RTL - Testado React Router_
+- [ ] Dia 4: _[Projeto - Testes em React]()_
 
 ##### Seção 7: Gerenciamento de estado com Redux
 
-- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 15-2: _Usando o Redux no React_
-- [ ] 15-3: _Usando o Redux no React - Prática_
-- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 15-5: _Testes em React-Redux_
-- [ ] 15-6: _[Projeto - Trybe Wallet]()_
+- [ ] Dia 1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] Dia 2: _Usando o Redux no React_
+- [ ] Dia 3: _Usando o Redux no React - Prática_
+- [ ] Dia 4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] Dia 5: _Testes em React-Redux_
+- [ ] Dia 6: _[Projeto - Trybe Wallet]()_
 
 ##### Seção 8: Projeto React
 
-- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
+- [ ] Dia 1: _[Projeto - Jogo de Trivia]()_
 
 ##### Seção 9: React Hooks & Context API
 
-- [ ] 17-1: _Context API do React_
-- [ ] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] Dia 1: _Context API do React_
+- [ ] Dia 2: _React Hooks - useState e useContext_
+- [ ] Dia 3: _React Hooks - useEffect e Hooks customizados_
+- [ ] Dia 4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Seção 10: Projeto Final de Front-end
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [ ] Dia 1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Seção 1: Docker: Utilizando Containers
 
-- [ ] 19-1: _Utilizando Containers - Docker_
-- [ ] 19-2: _Manipulando Imagens no Docker_
-- [ ] 19-3: _Orquestrando Containers com Docker Compose_
-- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+- [ ] Dia 1: _Utilizando Containers - Docker_
+- [ ] Dia 2: _Manipulando Imagens no Docker_
+- [ ] Dia 3: _Orquestrando Containers com Docker Compose_
+- [ ] Dia 4: _[Projeto - Docker Todo-List]()_
 
 ##### Seção 2: Introdução à SQL
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [ ] Dia 1: _Banco de dados SQL_
+- [ ] Dia 2: _Encontrando dados em um banco de dados_
+- [ ] Dia 3: _Filtrando dados de forma específica_
+- [ ] Dia 4: _Manipulando tabelas_
+- [ ] Dia 5: _[Projeto - All For One]()_
 
 ##### Seção 3: Funções SQL, JOINs e Normalização
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _[Projeto - One For All]()_
+- [ ] Dia 1: _Funções mais usadas no SQL_
+- [ ] Dia 2: _Descomplicando JOINs_
+- [ ] Dia 3: _Transformando ideias em um modelo de banco de dados_
+- [ ] Dia 4: _[Projeto - One For All]()_
 
 ##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Node.js - Um motor JavaScript_
-- [ ] 22-2: _Node.js - Fluxo Assíncrono_
-- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _Express - HTTP com Node.js_
-- [ ] 22-5: _Express - Middlewares_
-- [ ] 22-6: _[Projeto - Talks Manager]()_
+- [ ] Dia 1: _Node.js - Um motor JavaScript_
+- [ ] Dia 2: _Node.js - Fluxo Assíncrono_
+- [ ] Dia 3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [ ] Dia 4: _Express - HTTP com Node.js_
+- [ ] Dia 5: _Express - Middlewares_
+- [ ] Dia 6: _[Projeto - Talks Manager]()_
 
 ##### Seção 5: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _Arquitetura Web - Rest e Restful_
-- [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 23-5: _[Projeto - Store Manager]()_
+- [ ] Dia 1: _Arquitetura de Software - Camada de Model_
+- [ ] Dia 2: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] Dia 3: _Arquitetura Web - Rest e Restful_
+- [ ] Dia 4: _Arquitetura de Software - Testando as Camadas_
+- [ ] Dia 5: _[Projeto - Store Manager]()_
 
 ##### Seção 6: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _ORM - Interface de aplicação com o banco de dados_
-- [ ] 24-2: _ORM - Associations_
-- [ ] 24-3: _JWT - JSON Web Token_
-- [ ] 24-4: _Testando APIs com Testes de Integração_
-- [ ] 24-5: _[Projeto - API de Blogs]()_
+- [ ] Dia 1: _ORM - Interface de aplicação com o banco de dados_
+- [ ] Dia 2: _ORM - Associations_
+- [ ] Dia 3: _JWT - JSON Web Token_
+- [ ] Dia 4: _Testando APIs com Testes de Integração_
+- [ ] Dia 5: _[Projeto - API de Blogs]()_
 
 ##### Seção 7: Deployment
 
-- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _[Projeto - Stranger Things]()_
+- [ ] Dia 1: _Infraestrutura - Deploy com Heroku_
+- [ ] Dia 2: _Deploy Docker & Heroku_
+- [ ] Dia 3: _[Projeto - Stranger Things]()_
 
 ##### Seção 8: TypeScript
 
-- [ ] 26-1: _Introdução ao TypeScript_
-- [ ] 26-2: _Tipagem Estática e Generics_
-- [ ] 26-3: _Express com TypeScript_
-- [ ] 26-4: _[Projeto - Trybe Smith]()_
+- [ ] Dia 1: _Introdução ao TypeScript_
+- [ ] Dia 2: _Tipagem Estática e Generics_
+- [ ] Dia 3: _Express com TypeScript_
+- [ ] Dia 4: _[Projeto - Trybe Smith]()_
 
 ##### Seção 9: Programação Orientada a Objetos e SOLID
 
-- [ ] 27-1: _Introdução à Orientação a Objetos_
-- [ ] 27-2: _Herança e Interfaces_
-- [ ] 27-3: _Polimorfismo_
-- [ ] 27-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 27-5: _SOLID - Princípios L e I_
-- [ ] 27-6: _[Projeto - Trybers and Dragons]()_
+- [ ] Dia 1: _Introdução à Orientação a Objetos_
+- [ ] Dia 2: _Herança e Interfaces_
+- [ ] Dia 3: _Polimorfismo_
+- [ ] Dia 4: _SOLID - Introdução e Princípios S, O e D_
+- [ ] Dia 5: _SOLID - Princípios L e I_
+- [ ] Dia 6: _[Projeto - Trybers and Dragons]()_
 
 ##### Seção 10: NodeJS
 
-- [ ] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
+- [ ] Dia 1: _[Projeto - TFC - Trybe Futebol Clube]()_
 
 ##### Seção 11: Introdução ao MongoDB
 
-- [ ] 29-1: _MongoDB - Introdução_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _Operadores de consulta_
-- [ ] 29-4: _Updates Simples_
-- [ ] 29-5: _Updates Complexos - Arrays_
-- [ ] 29-6: _[Projeto - Commerce]()_
+- [ ] Dia 1: _MongoDB - Introdução_
+- [ ] Dia 2: _Filter Operators_
+- [ ] Dia 3: _Operadores de consulta_
+- [ ] Dia 4: _Updates Simples_
+- [ ] Dia 5: _Updates Complexos - Arrays_
+- [ ] Dia 6: _[Projeto - Commerce]()_
 
 ##### Seção 12: MongoDB com Node.js e POO
 
-- [ ] 30-1: _Mongoose e arquitetura MSC - Camada Model_
-- [ ] 30-2: _Mongoose e arquitetura MSC - Camada Service e Controller_
-- [ ] 30-3: _[Projeto - Car Shop]()_
+- [ ] Dia 1: _Mongoose e arquitetura MSC - Camada Model_
+- [ ] Dia 2: _Mongoose e arquitetura MSC - Camada Service e Controller_
+- [ ] Dia 3: _[Projeto - Car Shop]()_
 
 ##### Seção 13: Projeto
 
-- [ ] 31-1: _[Projeto - App de Delivery]()_
+- [ ] Dia 1: _[Projeto - App de Delivery]()_
 
 ##### Seção 14: MasterClass - VPS, CI/CD
 
-- [ ] 32-1: _Dia 1 - VPS_
-- [ ] 32-2: _Dia 2_
+- [ ] Dia 1: _Dia 1 - VPS_
+- [ ] Dia 2: _Dia 2_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Seção 1: Introdução à Python
 
-- [ ] 33-1: _Aprendendo Python_
-- [ ] 33-2: _Entrada e Saída de dados_
-- [ ] 33-3: _Testes_
-- [ ] 33-4: _[Projeto - Job Insights]()_
+- [ ] Dia 1: _Aprendendo Python_
+- [ ] Dia 2: _Entrada e Saída de dados_
+- [ ] Dia 3: _Testes_
+- [ ] Dia 4: _[Projeto - Job Insights]()_
 
 ##### Seção 2: Padrões de Projeto
 
-- [ ] 34-1: _POO em Python_
-- [ ] 34-2: _Padrões - Iterator, Adapter, Strategy_
-- [ ] 34-3: _Padrões - Decorator, Observer, Factory_
-- [ ] 34-4: _[Projeto - Relatórios de Estoque]()_
+- [ ] Dia 1: _POO em Python_
+- [ ] Dia 2: _Padrões - Iterator, Adapter, Strategy_
+- [ ] Dia 3: _Padrões - Decorator, Observer, Factory_
+- [ ] Dia 4: _[Projeto - Relatórios de Estoque]()_
 
 ##### Seção 3: Redes e Raspagem de Dados
 
-- [ ] 35-1: _Arquitetura de redes, ferramentas e segurança_
-- [ ] 35-2: _Raspagem de Dados_
-- [ ] 35-3: _[Projeto - Tech news]()_
+- [ ] Dia 1: _Arquitetura de redes, ferramentas e segurança_
+- [ ] Dia 2: _Raspagem de Dados_
+- [ ] Dia 3: _[Projeto - Tech news]()_
 
 ##### Seção 4: Algoritmos
 
-- [ ] 36-1: _Complexidade de Algoritmos_
-- [ ] 36-2: _Recursividade e Estratégias para solução de problemas_
-- [ ] 36-3: _Algoritmos de ordenação e busca_
-- [ ] 36-4: _[Projeto - Algoritmos]()_
+- [ ] Dia 1: _Complexidade de Algoritmos_
+- [ ] Dia 2: _Recursividade e Estratégias para solução de problemas_
+- [ ] Dia 3: _Algoritmos de ordenação e busca_
+- [ ] Dia 4: _[Projeto - Algoritmos]()_
 
 ##### Seção 5: Estrutura de dados I: Arrays, Listas, Filas e Pilhas
 
-- [ ] 37-1: _Arquitetura de Computadores_
-- [ ] 37-2: _Arrays_
-- [ ] 37-3: _Nó e Listas Encadeadas_
-- [ ] 37-4: _Pilhas e Filas_
-- [ ] 37-5: _[Projeto - TING - Trybe Is Not Google]()_
+- [ ] Dia 1: _Arquitetura de Computadores_
+- [ ] Dia 2: _Arrays_
+- [ ] Dia 3: _Nó e Listas Encadeadas_
+- [ ] Dia 4: _Pilhas e Filas_
+- [ ] Dia 5: _[Projeto - TING - Trybe Is Not Google]()_
 
 ##### Seção 6: Estrutura de dados II: Hashmaps e Sets
 
-- [ ] 38-1: _Hashmap e Dict_
-- [ ] 38-2: _Set_
-- [ ] 38-3: _[Projeto - Restaurant Orders]()_
+- [ ] Dia 1: _Hashmap e Dict_
+- [ ] Dia 2: _Set_
+- [ ] Dia 3: _[Projeto - Restaurant Orders]()_
 
 # [...]
