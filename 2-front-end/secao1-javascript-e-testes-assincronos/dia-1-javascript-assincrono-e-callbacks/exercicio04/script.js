@@ -17,11 +17,11 @@ const handleError = (errorReason) => console.log(`Error getting temperature: ${e
 
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (param1, param2) => {
-  const error = param2('Robot is busy');
-  const messageSuccessfully = Math.random() <=0.6;
+  const randomNumber = Math.random();
+  const messageSuccessfully = randomNumber <= 0.6;
   setTimeout(() => {
     if (messageSuccessfully) param1((getMarsTemperature().toFixed(1)));
-    else error;
+    else param2('Robot is busy');
   }, messageDelay());
 }
 
