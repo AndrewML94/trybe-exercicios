@@ -1,3 +1,5 @@
+// #1 Para este exercício deve-se utilizar uma API para puxar as 10 primeiras criptomoedas mostrando as seguintes informaçõe: Nome da criptomoeda, o símbolo e seu valor em dólares.
+
 const ul = document.getElementById('coins-list');
 
 const createLi = (param) => {
