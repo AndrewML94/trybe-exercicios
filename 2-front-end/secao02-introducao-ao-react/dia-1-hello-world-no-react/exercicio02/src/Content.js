@@ -1,3 +1,8 @@
+// #2 Crie um arquivo chamado Content.js que representará o componente Content:
+// - Este arquivo precisa ser criado na pasta src;
+// - Dentro do arquivo Content.js, crie uma classe React chamada Content;
+// - Ainda no arquivo Content.js, adicione o array Conteúdos.
+
 import React from 'react';
 
 const conteudos = [
