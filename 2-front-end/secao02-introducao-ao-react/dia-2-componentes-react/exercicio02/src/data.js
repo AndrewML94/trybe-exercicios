@@ -99,3 +99,5 @@ const pokemonList = [
     moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)',
   }
 ]
+
+export default pokemonList;
