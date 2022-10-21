@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+// #3 Renderize uma lista com as informações dos Pokémon dentro do componente <Pokedex />;
+// - O componente <Pokedex/> deve receber a lista de Pokémon através de uma props chamada pokemonList.
+// - Cada Pokémon da lista deverá ser renderizado por um componente Pokemon. Passe as informações do Pokémon através da props que já existe nesse componente.
+
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Pokedex from './components/Pokedex';
+import pokemonList from './data';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Pokedex pokemonList={ pokemonList } />
+      </div>
+    );
+  }
 }
 
 export default App;
