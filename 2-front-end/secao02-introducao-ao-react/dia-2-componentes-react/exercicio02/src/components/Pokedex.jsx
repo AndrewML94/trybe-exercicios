@@ -1,3 +1,11 @@
+// #1 Crie o componente <Pokedex />;
+// - Este componente deverá renderizar um título e uma ul;
+//  - Este componente deverá:
+//    - Ser criado dentro da pasta src/components.
+//      - Conter uma tag h1 com o texto Pokédex.
+//      - Conter uma tag ul. Por enquanto, essa lista estará vazia.
+//  - Renderize esse componente dentro do App.js.
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
