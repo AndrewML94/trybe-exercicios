@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<details>
+  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Você encontrará nesse repositório uma [pokédex](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex) que já está funcionando e exibindo uma lista de pokémon usando componentes React.
 
-## Available Scripts
+Sua missão será ~capturar todos os pokémon~ incrementar essa aplicação para que, além de componentes, também seja usado o estado do React, de forma que seja exibido apenas um pokémon por vez e que seja possível filtrar por tipo.
 
-In the project directory, you can run:
+➡ Para percorrer por toda a lista, você deverá criar um botão chamado `Próximo pokémon` e fazer com que, ao clicar nele, um novo pokémon seja exibido.
 
-### `npm start`
+➡ Além de percorrer a lista, você também deve desenvolver a lógica para filtrar pelo tipo do pokémon.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> 👀 **De olho na dica:** lembre-se que você pode utilizar os componentes já existentes e também criar novos, conforme achar necessário. Você também pode armazenar no estado do componente pai da aplicação o pokemon sobre o qual está iterando no momento e os filtros aplicados sobre a lista.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Depois de desenvolver os requisitos obrigatórios, você encontrará também alguns requisitos extras. Os requisitos extras não são avaliados pelo avaliador automático, mas você deve fazê-los se quiser  ~ganhar todas as insígnias pokémon~ aprender ainda mais sobre estados em React.
 
-### `npm test`
+Abaixo, um exemplo da aplicação final, considerando inclusive os requisitos extras:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Pokedex finalizada](images/pokedex.gif)
 
-### `npm run build`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary><strong>:memo: Habilidades</strong></summary><br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Neste exercício, verificamos se você é capaz de:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Ler o estado de um componente e usá-lo para alterar o que exibimos no browser;
 
-### `npm run eject`
+- Inicializar um componente, dando a ele um estado pré-definido;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Atualizar o estado de um componente.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Capturar eventos utilizando a sintaxe do React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Requisitos
 
-## Learn More
+## 1 - Faça com que apenas um pokémon seja exibido;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 2 - Crie um botão chamado `Próximo pokémon` para percorrer todos os pokémon da lista;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 3 - Faça com que, quando o último pokémon da lista estiver sendo exibido, ao clicar no botão `Próximo pokémon` o primeiro pokémon da lista seja exibido novamente;
 
-### Code Splitting
+## 4 - Crie dois botões de filtro, de forma que, quando algum deles for clicado, apenas os pokémon do respectivo tipo filtrado sejam exibidos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Exercícios extras (não são testados pelo avaliador)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Agora que você ~capturou todos os pokémon~ terminou os requisitos obrigatórios, consegue vencer todos os requistos extras?!
 
-### Making a Progressive Web App
+<details>
+  <summary>Separe os estilos de CSS por componente</summary><br />
+  
+- Faça um arquivo `.css` para cada componente da sua aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+</details>
 
-### Advanced Configuration
+<details>
+  <summary>Crie um botão chamado `All` para resetar o estado do filtro</summary><br />
+  
+- Ao clicar no botão "All", a pokédex deve voltar a circular por todos os pokémon.
+- Quando a página for carregada, o filtro selecionado inicialmente deve ser o `All`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+</details>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<details>
+  <summary>Caso ainda não tenha feito, crie um componente `Button`</summary><br />
 
-### `npm run build` fails to minify
+- Faça com que todos os botões da aplicação utilizem esse componente.
+- 💡Dica: pesquise sobre `this.props.children` no React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
+
+<details>
+  <summary>Faça os botões de filtro serem dinâmicos</summary><br />
+
+- Faça com que um botão de filtragem seja exibido para cada tipo de pokémon disponível nos dados, independentemente de quantos sejam e sem repetição de tipos. Por exemplo: se na sua pokédex existirem  pokémon do tipo Fire, Psychic, Electric e Normal, sua aplicação deve exibir 4 botões de filtro (um para cada tipo) e também o botão "All". 
+
+</details>
+
+<details>
+  <summary>Desabilite o botão `Próximo pokémon` se a lista filtrada tiver apenas um pokémon</summary><br />
+  
+- Se, depois de aplicar um filtro, a lista tiver apenas um pokémon, faça com que o botão `Próximo pokémon` fique desabilitado.
+
+</details>
