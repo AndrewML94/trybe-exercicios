@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  margin-top: 20px;
+}
+
+.showPerson {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+}
+
+.ulPerson {
+  display: flex;
+  margin: auto;
+}
+
+.liPerson {
+  list-style: none;
+  text-align: center;
+  gap: 10px;
+}
+
+.infoPerson {
+  padding: 5px;
+}
