@@ -73,27 +73,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 1: JavaScript e Testes Assíncronos
 
 - [X] Dia 1: _JavaScript Assíncrono e Callbacks_
-- [ ] Dia 2: _JavaScript Assíncrono - Fetch API e asyns/await_
-- [ ] Dia 2: _Jest - Testes Assíncronos_
-- [ ] Dia 3: _[Projeto - Carrinho de Compras]()_
+- [X] Dia 2: _JavaScript Assíncrono - Fetch API e asyns/await_
+- [X] Dia 2: _Jest - Testes Assíncronos_
+- [X] Dia 3: _[Projeto - Carrinho de Compras]()_
 
 ##### Seção 2: Introdução à React
 
-- [ ] Dia 1: _'Hello, world' no React!_
-- [ ] Dia 2: _Componentes React_
-- [ ] Dia 3: _[Projeto - Sistema Solar]()_
+- [X] Dia 1: _'Hello, world' no React!_
+- [X] Dia 2: _Componentes React_
+- [X] Dia 3: _[Projeto - Sistema Solar]()_
 
 ##### Seção 3: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] Dia 1: _'Componentes com estado e eventos_
-- [ ] Dia 2: _Formulários no React_
-- [ ] Dia 3: _[Projeto - Tryunfo]()_
+- [X] Dia 1: _'Componentes com estado e eventos_
+- [X] Dia 2: _Formulários no React_
+- [X] Dia 3: _[Projeto - Tryunfo]()_
 
 ##### Seção 4: Ciclo de Vida de Componentes e React Router
 
-- [ ] Dia 1: _Ciclo de vida de componentes_
-- [ ] Dia 2: _React Router_
-- [ ] Dia 3: _[Projeto - TrybeTunes]()_
+- [X] Dia 1: _Ciclo de vida de componentes_
+- [X] Dia 2: _React Router_
+- [X] Dia 3: _[Projeto - TrybeTunes]()_
 
 ##### Seção 5: Metodologias Ágeis
 
