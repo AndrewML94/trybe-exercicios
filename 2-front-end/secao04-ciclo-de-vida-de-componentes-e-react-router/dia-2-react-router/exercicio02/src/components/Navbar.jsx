@@ -8,8 +8,8 @@ class Navbar extends Component {
       <div>
         <nav>
           <ul className="navbar">
-            <li><Link to="/">Pokedex</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link className="navbar-link" to="/">Pokedex</Link></li>
+            <li><Link className="navbar-link" to="/about">About</Link></li>
           </ul>
         </nav>
       </div>

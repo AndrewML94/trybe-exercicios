@@ -1,0 +1,29 @@
+.pokemon {
+  align-items: center;
+  border: 1px gray solid;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  margin: 10px;
+  min-width: 25%;
+}
+
+.pokemon-details {
+  margin: 10px;
+  text-align: center;
+}
+
+.pokemon-habitat {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pokemon-section {
+  margin-left: 10px;
+}
