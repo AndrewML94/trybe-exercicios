@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import PropTypes from 'prop-types';
 
 class Users extends Component {
   render() {
@@ -8,12 +9,17 @@ class Users extends Component {
     return (
       <div>
         <Navbar />
-        <h3>Você está na página Usuários</h3>
+        <h3>You are on the Users page</h3>
         <p> { greetingsMessage }, My awesome Users component.</p>
         <p>O id da URL é: <strong>{ id }</strong>.</p>
       </div>
     )
   }
+}
+
+Users.propType = {
+  greetingsMessage: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 }
 
 export default Users;

@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
-        <h3>Você está na página Home</h3>
+        <h3>You are on the Home page</h3>
       </div>
     )
   }

@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div>
         <Navbar />
-        <h3>Você está na página About</h3>
+        <h3>You are on the About page</h3>
       </div>
     )
   }
