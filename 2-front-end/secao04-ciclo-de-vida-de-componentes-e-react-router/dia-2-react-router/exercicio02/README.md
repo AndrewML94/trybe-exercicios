@@ -17,9 +17,6 @@
   <summary>Crie rota para a página que exibirá mais informações do Pokémon</summary><br />
 
 - Crie a rota `/pokemon/{id}`, onde `{id}` será o `id` do Pokémon selecionado. Cada Pokémon possui um `id` na Pokédex e podemos usar essa informação como parâmetro de _URL_ para permitir que a aplicação consiga acessar detalhes de um pokémon específico.
-
-> Por exemplo: o id do pokémon `Pikachu` é `25`.Com isso, para acessar a página de informações do `Pikachu`, devemos acessar a rota `/pokemon/25`.
-
 - Crie o componente `<PokemonDetails />` e faça com que ele seja renderizado quando a rota `/pokemon/{id}` for acessada.
 - Dentro do componente `<PokemonDetails />`, recupere a informação do parâmetro `id` passado pela _URL_.
 - Exiba um título `h1` com o  texto `{nome-do-pokemon} details`, onde `nome-do-pokemon` é o nome do Pokémon que possui o `id` passado como parâmetro pela _URL_.
