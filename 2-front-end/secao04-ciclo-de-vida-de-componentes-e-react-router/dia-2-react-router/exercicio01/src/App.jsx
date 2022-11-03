@@ -3,20 +3,23 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Users from './pages/Users';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Página para testar conhecimentos aprendidos referente React Router</h1>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/about" component={ About } />
-          <Route exact path="/users" render={(greetingsMessage) => <Users {...greetingsMessage} greetingsMessage='Good Morning'/> } />
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Trybe</h1>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/users/:id" render={(props) => <Users {...props} greetingsMessage='Good Morning'/> } />
+            <Route exact path="/about" component={ About } />
+            <Route exact path="/" component={ Home } />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;
