@@ -97,15 +97,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 5: Metodologias Ágeis
 
-- [ ] Dia 1: _Metodologias Ágeis_
-- [ ] Dia 2: _[Projeto - Frontend Online Store]()_
+- [X] Dia 1: _Metodologias Ágeis_
+- [X] Dia 2: _[Projeto - Frontend Online Store]()_
 
 ##### Seção 6: Testes automatizados com React Testing Library
 
-- [ ] Dia 1: _RTL - Primeiros passos_
-- [ ] Dia 2: _RTL - Mocks e Inputs_
-- [ ] Dia 3: _RTL - Testado React Router_
-- [ ] Dia 4: _[Projeto - Testes em React]()_
+- [X] Dia 1: _RTL - Primeiros passos_
+- [X] Dia 2: _RTL - Mocks e Inputs_
+- [X] Dia 3: _RTL - Testado React Router_
+- [X] Dia 4: _[Projeto - Testes em React]()_
 
 ##### Seção 7: Gerenciamento de estado com Redux
 
