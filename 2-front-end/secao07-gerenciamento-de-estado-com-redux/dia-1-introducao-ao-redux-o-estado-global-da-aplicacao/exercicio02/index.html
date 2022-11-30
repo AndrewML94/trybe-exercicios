@@ -57,15 +57,38 @@
 
       const combineReducers = Redux.combineReducers({ themeReducer, statusReducer });
 
-      const newState = Redux.createStore(combineReducers);
-      console.log(newState);
+      const newStore = Redux.createStore(combineReducers);
 
       themeButton.addEventListener('click', () => {
-        store.dispatch({ type: 'TOOGLE_THEME' });
+        newStore.dispatch({ type: 'TOOGLE_THEME' });
       });
 
       statusButton.addEventListener('click', () => {
-        store.dispatch({ type: 'TOOGLE_STATUS' });
+        newStore.dispatch({ type: 'TOOGLE_STATUS' });
+      });
+
+      newStore.subscribe(() => {
+        const state = newStore.getState();
+        const body = document.querySelector('body');
+        const status = document.getElementById('status');
+
+        if (state.themeReducer.theme === 'light') {
+          themeButton.innerText = 'Dark Mode';
+          body.style.backgroundColor = '#fff';
+          body.style.color = '#333';
+        } else {
+          themeButton.innerText = 'Light Mode';
+          body.style.backgroundColor = '#333';
+          body.style.color = '#fff';
+        }
+
+        if (state.statusReducer.status === 'online') {
+          statusButton.innerText = 'Ficar Offline';
+          status.innerText = 'Online';
+        } else {
+          statusButton.innerText = 'Ficar Online';
+          status.innerText = 'Offline';
+        }
       });
     </script>
   </body>
