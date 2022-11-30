@@ -26,8 +26,6 @@
         theme: 'dark',
       };
 
-      const combineReducers = Redux.combineReducers({ themeReducer, statusReducer });
-
       const themeReducer = (state = THEME_INITIAL_STATE, action) => {
         switch (action.type) {
           default:
@@ -48,6 +46,11 @@
 
       const themeButton = document.getElementById('toggle-theme');
       const statusButton = document.getElementById('toggle-status');
+
+      const combineReducers = Redux.combineReducers({ themeReducer, statusReducer });
+
+      const newState = Redux.createStore(combineReducers);
+      console.log(newState);
 
       themeButton.addEventListener('click', () => {
         // coloque o código aqui.
