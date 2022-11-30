@@ -61,11 +61,11 @@
       console.log(newState);
 
       themeButton.addEventListener('click', () => {
-        // coloque o código aqui.
+        store.dispatch({ type: 'TOOGLE_THEME' });
       });
 
       statusButton.addEventListener('click', () => {
-        // coloque o código aqui.
+        store.dispatch({ type: 'TOOGLE_STATUS' });
       });
     </script>
   </body>
