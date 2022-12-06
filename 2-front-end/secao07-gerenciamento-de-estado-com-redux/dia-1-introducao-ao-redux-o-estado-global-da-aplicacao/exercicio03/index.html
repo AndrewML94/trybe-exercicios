@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de dark mode</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.js"></script>
+</head>
+<style>
+  * {
+    margin: 0;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+  }
+  #intImage {
+    background-color: yellow;
+    height: 200px;
+  }
+  #intImage:hover {
+    opacity: 0.8;
+  }
+</style>
+<body>
+  <div class="container">
+    <button id="intImage" type="button"><img id="intImage" src="/image/355386.png" alt="interruptor para troca de background"></button>
+  </div>
+</body>
+<script>
+  const INITIAL_THEME = {
+    theme: 'dark',
+  }
+
+  const reducer = (state = INITIAL_THEME, action) => {
+    switch(action.type) {
+      case 'TOOGLE_THEME': return {
+        ...state,
+        theme: state.theme === 'dark' ? 'light' : 'dark'
+      }
+      default: return state;
+    }
+  }
+
+  const store = Redux.createStore(reducer);
+
+  const intButton = document.getElementById('intImage');
+  intButton.addEventListener('click', () => {
+    store.dispatch({ type: 'TOOGLE_THEME' })
+  })
+
+  store.subscribe(() => {
+    const { theme } = store.getState();
+    const div = document.querySelector('.container');
+
+    if (theme === 'light') {
+      div.style.backgroundColor = '#fff';
+    } else {
+      div.style.backgroundColor = '#333';
+    }
+  });
+</script>
+</html>
