@@ -1,7 +1,9 @@
+import PersonalForm from "./components/PersonalForm";
+
 function App() {
   return (
     <div>
-      Olá mundo!
+      <PersonalForm />
     </div>
   );
 }
