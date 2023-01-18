@@ -1,5 +1,6 @@
-# Crie uma aplicação React e implemente um formulário contendo os dados pessoais de uma pessoa estudante da Trybe. Os seus componentes precisam ser funcionais e, para gerenciamento do estado, precisam utilizar hooks.
+# Exercício 1:
 
+Crie uma aplicação React e implemente um formulário contendo os dados pessoais de uma pessoa estudante da Trybe. Os seus componentes precisam ser funcionais e, para gerenciamento do estado, precisam utilizar hooks.
 O formulário deve conter:
 
 - Input do tipo text contendo o nome completo;
