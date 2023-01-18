@@ -1,0 +1,12 @@
+.emailsList {
+  display: flex;
+  align-items: center;
+}
+
+.read {
+  font-weight: bold;
+}
+
+.noRead {
+  color: gray;
+}

@@ -1,7 +1,10 @@
+import Email from './components/Email';
+
 function App() {
   return (
     <div>
-      <h1>Projeto 2</h1>
+      <h1>TrybeMail</h1>
+      <Email />
     </div>
   );
 }
