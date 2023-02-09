@@ -68,7 +68,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] Dia 5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [X] Dia 6: _[Projeto - Zoo functions]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Seção 1: JavaScript e Testes Assíncronos
 
@@ -123,20 +123,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 9: React Hooks & Context API
 
 - [X] Dia 1: _Context API do React_
-- [ ] Dia 2: _React Hooks - useState e useContext_
-- [ ] Dia 3: _React Hooks - useEffect e Hooks customizados_
-- [ ] Dia 4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] Dia 2: _React Hooks - useState e useContext_
+- [X] Dia 3: _React Hooks - useEffect e Hooks customizados_
+- [X] Dia 4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Seção 10: Projeto Final de Front-end
 
-- [ ] Dia 1: _[Projeto - App de Receitas]()_
+- [X] Dia 1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Seção 1: Docker: Utilizando Containers
 
-- [ ] Dia 1: _Utilizando Containers - Docker_
-- [ ] Dia 2: _Manipulando Imagens no Docker_
+- [X] Dia 1: _Utilizando Containers - Docker_
+- [X] Dia 2: _Manipulando Imagens no Docker_
 - [ ] Dia 3: _Orquestrando Containers com Docker Compose_
 - [ ] Dia 4: _[Projeto - Docker Todo-List]()_
 
