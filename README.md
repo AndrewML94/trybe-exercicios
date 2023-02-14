@@ -137,12 +137,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] Dia 1: _Utilizando Containers - Docker_
 - [X] Dia 2: _Manipulando Imagens no Docker_
-- [ ] Dia 3: _Orquestrando Containers com Docker Compose_
-- [ ] Dia 4: _[Projeto - Docker Todo-List]()_
+- [X] Dia 3: _Orquestrando Containers com Docker Compose_
+- [X] Dia 4: _[Projeto - Docker Todo-List]()_
 
 ##### Seção 2: Introdução à SQL
 
-- [ ] Dia 1: _Banco de dados SQL_
+- [X] Dia 1: _Banco de dados SQL_
 - [ ] Dia 2: _Encontrando dados em um banco de dados_
 - [ ] Dia 3: _Filtrando dados de forma específica_
 - [ ] Dia 4: _Manipulando tabelas_
