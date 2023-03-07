@@ -1,0 +1,16 @@
+{
+  "name": "exercicio01",
+  "version": "1.0.0",
+  "description": "Exercícios do dia 1 da seção 4 - Indrodução ao desenvolvimento web com Node.js",
+  "main": "./src/bmi.js",
+  "scripts": {
+    "start": "node .",
+    "bmi": "node ./src/bmi.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Lima",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
