@@ -1,12 +1,12 @@
 const { questionFloat } = require('readline-sync');
 
 const questionWeight = () => {
-  const weight = questionFloat('What is your weight(kg)? ');
+  const weight = questionFloat('Qual o seu peso(kg)? ');
   return weight;
 };
 
 const questionHeight = () => {
-  const height = questionFloat('What is your height(mt)? ');
+  const height = questionFloat('Qual a sua altura(mt)? ');
   return height;
 };
 
