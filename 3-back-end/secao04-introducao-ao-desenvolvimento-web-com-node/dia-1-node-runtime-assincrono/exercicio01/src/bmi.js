@@ -29,7 +29,7 @@ const imc = (weight, height) => {
       console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade grau II`)
     break;
     case result >= 40:
-      console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade grau III`)
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade graus III e IV`)
     break;
     default:
       console.log(`Seu IMC é de: ${result.toFixed(2)}`)
