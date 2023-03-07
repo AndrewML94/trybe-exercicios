@@ -1,18 +1,40 @@
 const { questionFloat } = require('readline-sync');
 
 const questionWeight = () => {
-  const weight = questionFloat('What is your weight? (KG) ');
+  const weight = questionFloat('What is your weight(kg)? ');
   return weight;
 };
 
 const questionHeight = () => {
-  const height = questionFloat('What is your height? (MT) ');
+  const height = questionFloat('What is your height(mt)? ');
   return height;
 };
 
 const imc = (weight, height) => {
   const result = weight / (height * height);
-  return `Seu IMC é de: ${result.toFixed(2)}`;
+  switch (true) {
+    case result < 18.5:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Abaixo do peso (magreza)`);
+    break;
+    case result >= 18.5 && result <= 24.9:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Peso normal`)
+    break;
+    case result >= 25 && result <= 29.9:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Acima do peso (sobrepeso)`)
+    break;
+    case result >= 30 && result <= 34.9:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade grau I`)
+    break;
+    case result >= 35 && result <= 39.9:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade grau II`)
+    break;
+    case result >= 40:
+      console.log(`Seu IMC é de: ${result.toFixed(2)} - Obesidade grau III`)
+    break;
+    default:
+      console.log(`Seu IMC é de: ${result.toFixed(2)}`)
+    break;
+  }
 }
 
-console.log(imc(questionHeight(), questionWeight()));
+imc(questionWeight(), questionHeight());
