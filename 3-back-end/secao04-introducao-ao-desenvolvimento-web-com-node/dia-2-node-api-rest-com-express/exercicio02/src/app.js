@@ -26,4 +26,13 @@ app.get('/movies/:id', async (req, res) => {
   }
 });
 
+app.get('/movies', async (_req, res) => {
+  try {
+    const movies = await readMovies();
+    res.status(200).json(movies);
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 module.exports = app;
