@@ -15,6 +15,21 @@ const readMovies = async () => {
   }
 };
 
+app.get('/movies/search', async (req, res) => {
+  try {
+    const { q: param } = req.query;
+    const movies = await readMovies();
+    if (param) {
+      const filteredMovies = movies.filter((elem) => elem.movie.includes(param));
+      console.log(filteredMovies);
+      return res.status(200).json(filteredMovies);
+    }
+    res.status(200).end();
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 app.get('/movies/:id', async (req, res) => {
   try {
     const idParams = req.params;
