@@ -35,4 +35,14 @@ app.get('/movies', async (_req, res) => {
   }
 });
 
+app.post('/movies', async (req, res) => {
+  try {
+    const newMovieList = await readMovies();
+    newMovieList.push(req.body);
+    res.status(201).json(newMovieList);
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 module.exports = app;
