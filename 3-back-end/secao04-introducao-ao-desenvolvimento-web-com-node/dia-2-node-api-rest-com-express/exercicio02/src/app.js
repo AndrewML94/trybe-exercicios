@@ -62,4 +62,16 @@ app.put('/movies/:id', async (req, res) => {
   }
 });
 
+app.delete('/movies/:id', async (req, res) => {
+  try {
+    const idParams = req.params;
+    const movies = await readMovies();
+    const deleteMovie = movies.findIndex(({ id }) => id === Number(idParams.id));
+    movies.splice(deleteMovie, 1);
+    res.status(200).end();
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 module.exports = app;
