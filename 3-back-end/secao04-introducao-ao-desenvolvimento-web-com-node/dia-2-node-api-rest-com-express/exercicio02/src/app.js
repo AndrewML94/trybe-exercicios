@@ -45,4 +45,21 @@ app.post('/movies', async (req, res) => {
   }
 });
 
+app.put('/movies/:id', async (req, res) => {
+  try {
+    const idParams = req.params;
+    const { movie, price } = req.body;
+    const movies = await readMovies();
+    const updateMovie = movies.find(({ id }) => id === Number(idParams.id));
+
+    if (!updateMovie) res.status(404).json({ message: 'Filme não encontrado' });
+
+    updateMovie.movie = movie;
+    updateMovie.price = price;
+    res.status(200).json(updateMovie);
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+});
+
 module.exports = app;
