@@ -143,26 +143,26 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 2: Introdução à SQL
 
 - [X] Dia 1: _Banco de dados SQL_
-- [ ] Dia 2: _Encontrando dados em um banco de dados_
-- [ ] Dia 3: _Filtrando dados de forma específica_
-- [ ] Dia 4: _Manipulando tabelas_
-- [ ] Dia 5: _[Projeto - All For One]()_
+- [X] Dia 2: _Encontrando dados em um banco de dados_
+- [X] Dia 3: _Filtrando dados de forma específica_
+- [X] Dia 4: _Manipulando tabelas_
+- [X] Dia 5: _[Projeto - All For One]()_
 
 ##### Seção 3: Funções SQL, JOINs e Normalização
 
-- [ ] Dia 1: _Funções mais usadas no SQL_
-- [ ] Dia 2: _Descomplicando JOINs_
-- [ ] Dia 3: _Transformando ideias em um modelo de banco de dados_
-- [ ] Dia 4: _[Projeto - One For All]()_
+- [X] Dia 1: _Funções mais usadas no SQL_
+- [X] Dia 2: _Descomplicando JOINs_
+- [X] Dia 3: _Transformando ideias em um modelo de banco de dados_
+- [X] Dia 4: _[Projeto - One For All]()_
 
 ##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] Dia 1: _Node.js - Um motor JavaScript_
-- [ ] Dia 2: _Node.js - Fluxo Assíncrono_
-- [ ] Dia 3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] Dia 4: _Express - HTTP com Node.js_
-- [ ] Dia 5: _Express - Middlewares_
-- [ ] Dia 6: _[Projeto - Talks Manager]()_
+- [X] Dia 1: _Node.js - Um motor JavaScript_
+- [X] Dia 2: _Node.js - Fluxo Assíncrono_
+- [X] Dia 3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [X] Dia 4: _Express - HTTP com Node.js_
+- [X] Dia 5: _Express - Middlewares_
+- [X] Dia 6: _[Projeto - Talks Manager]()_
 
 ##### Seção 5: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
