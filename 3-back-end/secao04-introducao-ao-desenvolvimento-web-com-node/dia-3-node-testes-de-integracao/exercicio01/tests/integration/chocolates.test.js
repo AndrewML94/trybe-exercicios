@@ -92,3 +92,33 @@ describe('Usando o método GET em "/chocolates/total"', function() {
     expect(response.body).to.deep.equal({ 'totalChocolates': 4 });
   });
 });
+
+describe('Usando o método GET em "/chocolates/search"', function() {
+  describe('Passando uma query com nome existente', function() {
+    it('Ao pesquisar por "Mo" é apresentado o respectivo chocolate', async function() {
+
+      const response = await chai.request(app).get('/chocolates/search?name=Mo')
+      const chocolate = [{
+        id: 3,
+        name: 'Mon Chéri',
+        brandId: 2
+      },
+      { id: 4,
+        name: 'Mounds', 
+        brandId: 3
+      }];
+  
+      expect(response.status).to.be.equal(200);
+      expect(response.body.chocolate).to.deep.equal(chocolate);
+    });
+  })
+  describe('Passando uma query com nome que não existe', function() {
+    it('Ao pesquisar por "ZZZ" é apresentado um array vazio', async function() {
+
+      const response = await chai.request(app).get('/chocolates/search?name=ZZZ')
+  
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal([]);
+    });
+  })
+});

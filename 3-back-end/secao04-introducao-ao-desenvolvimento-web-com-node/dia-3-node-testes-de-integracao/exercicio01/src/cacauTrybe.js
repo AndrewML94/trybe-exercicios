@@ -31,9 +31,15 @@ const countChocolates = async () => {
   return cacauTrybe.chocolates.length;
 }
 
+const searchChocolate = async (query) => {
+  const cacauTrybe = await readCacauTrybe();
+  return cacauTrybe.chocolates.filter((chocolate) => chocolate.name.includes(query));
+};
+
 module.exports = {
   getAllChocolates,
   getChocolatesById,
   getChocolatesByBrand,
-  countChocolates
+  countChocolates,
+  searchChocolate
 }
