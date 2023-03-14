@@ -26,8 +26,14 @@ const getChocolatesByBrand = async (brandId) => {
   return cacauTrybe.chocolates.filter((chocolate) => chocolate.brandId === brandId);
 };
 
+const countChocolates = async () => {
+  const cacauTrybe = await readCacauTrybe();
+  return cacauTrybe.chocolates.length;
+}
+
 module.exports = {
   getAllChocolates,
   getChocolatesById,
-  getChocolatesByBrand
+  getChocolatesByBrand,
+  countChocolates
 }

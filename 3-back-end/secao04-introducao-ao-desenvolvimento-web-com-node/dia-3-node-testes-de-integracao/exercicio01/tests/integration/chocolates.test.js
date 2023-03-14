@@ -84,7 +84,7 @@ describe('Usando o método GET em "/chocolates/brand/:brandId" para buscar brand
 });
 
 describe('Usando o método GET em "/chocolates/total"', function() {
-  it('Mostra o total de chocolates no db', async function() {
+  it('Mostra o total de chocolates no banco de dados', async function() {
 
     const response = await chai.request(app).get('/chocolates/total');
 
