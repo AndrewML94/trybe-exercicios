@@ -1,4 +1,4 @@
-const { idSchema } = require('./schemas');
+const { idSchema, addPassengerSchema } = require('./schemas');
 
 const validateId = (id) => {
   const { error } = idSchema.validate(id);
@@ -8,6 +8,15 @@ const validateId = (id) => {
   return { type: null, message: '' };
 };
 
+const validateNewPassenger = (name, email, phone) => {
+  const { error } = addPassengerSchema
+    .validate({ name, email, phone });
+  if (error) return { type: 'INVALID_VALUE', message: error.message };
+  
+  return { type: null, message: '' };
+};
+
 module.exports = {
   validateId,
+  validateNewPassenger,
 };
