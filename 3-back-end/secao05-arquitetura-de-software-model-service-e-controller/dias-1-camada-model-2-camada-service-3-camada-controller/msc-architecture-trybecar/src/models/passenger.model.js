@@ -14,7 +14,6 @@ const findById = async (passengerId) => {
   const [[passenger]] = await connection.execute(
     'SELECT * FROM passengers WHERE id = ?', [passengerId],
   );
-
   return camelize(passenger);
 };
 

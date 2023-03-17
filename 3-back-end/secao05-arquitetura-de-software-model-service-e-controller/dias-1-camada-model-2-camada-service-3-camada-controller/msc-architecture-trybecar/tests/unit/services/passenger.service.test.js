@@ -1,13 +1,14 @@
 const { expect } = require('chai');
 const sinon = require('sinon');
 const { passengerService } = require('../../../src/services');
-const { passengerModel } = require('../../../src/models');
+const { passengerModel, travelModel, waypointModel } = require('../../../src/models');
 const { 
   allPassengers,
   invalidValue,
   validName,
   validEmail,
   validPhone,
+  travelResponse,
 } = require('./passenger.service.mock');
 
 describe('Verificando service pessoa passageira', function () {
@@ -80,6 +81,86 @@ describe('Verificando service pessoa passageira', function () {
   
         expect(result.type).to.equal(null);
         expect(result.message).to.deep.equal(allPassengers[0]);
+      });
+    });
+
+    describe('solicitação de viagem', function () {
+      it('sem pontos de parada é realizada com sucesso', async function () {
+        sinon.stub(passengerModel, 'findById').resolves(true); 
+        sinon.stub(travelModel, 'insert').resolves(1); 
+        sinon.stub(travelModel, 'findById').resolves(travelResponse);
+
+        const WAITING_DRIVER = 1;
+        const passenger = {
+          id: 1,
+          startingAddress: 'Rua X',
+          endingAddress: 'Rua Y',
+        };
+        const travel = await passengerService.requestTravel(
+          passenger.id,
+          passenger.startingAddress,
+          passenger.endingAddress,
+        );
+
+        expect(travel.message).to.deep.equal({
+          id: 1,
+          passengerId: 1,
+          driverId: null,
+          travelStatusId: WAITING_DRIVER,
+          startingAddress: 'Rua X',
+          endingAddress: 'Rua Y',
+          requestDate: '2022-08-24T03:04:04.374Z',
+        });
+      });
+  
+      it('com pontos de parada é realizada com sucesso', async function () {
+        sinon.stub(passengerModel, 'findById').resolves(true); 
+        sinon.stub(travelModel, 'insert').resolves(1); 
+        sinon.stub(travelModel, 'findById').resolves(travelResponse);
+        sinon.stub(waypointModel, 'insert').resolves(1); 
+
+        const WAITING_DRIVER = 1;
+        const passenger = {
+          id: 1,
+          startingAddress: 'Rua X',
+          endingAddress: 'Rua Y',
+          waypoints: [{
+              address: 'Rua Z',
+              stopOrder: 1,
+          }],
+        };
+        const travel = await passengerService.requestTravel(
+          passenger.id,
+          passenger.startingAddress,
+          passenger.endingAddress,
+          passenger.waypoints,
+        );
+
+        expect(travel.message).to.deep.equal({
+          id: 1,
+          passengerId: 1,
+          driverId: null,
+          travelStatusId: WAITING_DRIVER,
+          startingAddress: 'Rua X',
+          endingAddress: 'Rua Y',
+          requestDate: '2022-08-24T03:04:04.374Z',
+        });
+      });
+  
+      it('com mesmo local de origem e destino é rejeitada', async function () {
+        const passenger = {
+          id: 1,
+          startingAddress: 'Rua X',
+          endingAddress: 'Rua X',
+        };
+        const error = await passengerService.requestTravel(
+          passenger.id,
+          passenger.startingAddress,
+          passenger.endingAddress,
+        );
+
+        expect(error.type).to.equal('INVALID_VALUE');
+        expect(error.message).to.equal('"endingAddress" contains an invalid value');
       });
     });
 
