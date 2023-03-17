@@ -1,64 +1,31 @@
 const express = require('express');
-const camelize = require('camelize'); // para entender melhor esse pacote vocÊ pode dar uma olhadinha aqui: https://www.npmjs.com/package/camelize
-const connection = require('./connection');
+const connection = require('./models/connection');
+const { passengerService, driverService } = require('./services');
 
 const app = express();
 
 app.use(express.json());
 
-const WAITING_DRIVER = 1;
 const DRIVER_ON_THE_WAY = 2;
 const TRAVEL_IN_PROGRESS = 3;
 const TRAVEL_FINISHED = 4;
-
-const passengerExists = async (passengerId) => {
-  const [[passenger]] = await connection.execute(
-    'SELECT * FROM passengers WHERE id = ?',
-    [passengerId],
-  );
-  if (passenger) return true;
-  return false;
-};
-
-const saveWaypoints = (waypoints, travelId) => {
-  if (waypoints && waypoints.length > 0) {
-    return waypoints.map(async (value) => connection.execute(
-      'INSERT INTO waypoints (address, stop_order, travel_id) VALUE (?, ?, ?)',
-      [value.address, value.stopOrder, travelId],
-    ));
-  }
-  return [];
-};
 
 app.post('/passengers/:passengerId/request/travel', async (req, res) => {
   const { passengerId } = req.params;
   const { startingAddress, endingAddress, waypoints } = req.body;
 
-  if (await passengerExists(passengerId)) {
-    const [resultTravel] = await connection.execute(
-      `INSERT INTO travels 
-          (passenger_id, starting_address, ending_address) VALUE (?, ?, ?)`,
-      [
-        passengerId,
-        startingAddress,
-        endingAddress,
-      ],
-    );
-    await Promise.all(saveWaypoints(waypoints, resultTravel.insertId));
-    const [[response]] = await connection.execute(
-      'SELECT * FROM travels WHERE id = ?',
-      [resultTravel.insertId],
-    );
-    return res.status(201).json(camelize(response));
-  }
-  res.status(500).json({ message: 'Ocorreu um erro' });
+  const travel = await passengerService.requestTravel(
+    passengerId, 
+    startingAddress, 
+    endingAddress, 
+    waypoints,
+  );
+  
+  res.status(201).json(travel);
 });
 
 app.get('/drivers/open/travels', async (_req, res) => {
-  const [result] = await connection.execute(
-    'SELECT * FROM travels WHERE travel_status_id = ?',
-    [WAITING_DRIVER],
-  );
+  const result = await driverService.getWaitingDriverTravels();
   res.status(200).json(result);
 });
 
