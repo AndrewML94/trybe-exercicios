@@ -1,4 +1,5 @@
 const { passengerModel } = require('../models');
+const schema = require('./validations/validationsInputValues');
 
 const findAll = async () => {
   const passengers = await passengerModel.findAll();
@@ -6,6 +7,17 @@ const findAll = async () => {
   return { type: null, message: passengers };
 };
 
+const findById = async (passengerId) => {
+  const error = schema.validateId(passengerId);
+  const passenger = await passengerModel.findById(passengerId);
+
+  if (error.type) return error;
+  if (!passenger) return { type: 'PASSENGER_NOT_FOUND', message: 'Passenger not found' };
+
+  return { type: null, message: passenger };
+};
+
 module.exports = {
   findAll,
+  findById,
 };
