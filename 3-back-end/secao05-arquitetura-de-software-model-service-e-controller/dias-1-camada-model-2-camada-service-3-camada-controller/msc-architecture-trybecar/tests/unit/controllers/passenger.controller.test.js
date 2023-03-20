@@ -11,6 +11,9 @@ const {
   passengerListMock,
   passengerMock,
   newPassengerMock,
+  happyControllerResponseCreateTravelObject,
+  happyReqCreateTravelObject,
+  happyResponseCreateTravelObject,
 } = require('./mocks/passenger.controller.mock');
 
 describe('Testes de unidade do passengerController', function () {
@@ -125,6 +128,24 @@ describe('Testes de unidade do passengerController', function () {
 
       expect(res.status).to.have.been.calledWith(422);
       expect(res.json).to.have.been.calledWith('"name" length must be at least 3 characters long');
+    });
+  });
+
+  describe('Criando uma nova viagem', function () {
+    it('enviando dados válidos deve cadastrar a viagem', async function () {
+      const res = {};
+      const req = happyReqCreateTravelObject;
+
+      res.status = sinon.stub().returns(res);
+      res.json = sinon.stub().returns();
+      sinon
+        .stub(passengerService, 'requestTravel')
+        .resolves(happyControllerResponseCreateTravelObject);
+
+      await passengerController.createTravel(req, res);
+
+      expect(res.status).to.have.been.calledWith(201);
+      expect(res.json).to.have.been.calledWith(happyResponseCreateTravelObject);
     });
   });
 

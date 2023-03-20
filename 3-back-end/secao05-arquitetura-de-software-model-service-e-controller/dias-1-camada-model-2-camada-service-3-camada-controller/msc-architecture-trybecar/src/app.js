@@ -1,6 +1,6 @@
 const express = require('express');
 const connection = require('./models/connection');
-const { passengerService, driverService } = require('./services');
+const { driverService } = require('./services');
 const { passengerRouter } = require('./routers');
 
 const app = express();
@@ -11,20 +11,6 @@ app.use('/passengers', passengerRouter);
 const DRIVER_ON_THE_WAY = 2;
 const TRAVEL_IN_PROGRESS = 3;
 const TRAVEL_FINISHED = 4;
-
-app.post('/passengers/:passengerId/request/travel', async (req, res) => {
-  const { passengerId } = req.params;
-  const { startingAddress, endingAddress, waypoints } = req.body;
-
-  const travel = await passengerService.requestTravel(
-    passengerId, 
-    startingAddress, 
-    endingAddress, 
-    waypoints,
-  );
-  
-  res.status(201).json(travel);
-});
 
 app.get('/drivers/open/travels', async (_req, res) => {
   const result = await driverService.getWaitingDriverTravels();
