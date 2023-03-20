@@ -1,10 +1,12 @@
 const express = require('express');
 const connection = require('./models/connection');
 const { passengerService, driverService } = require('./services');
+const { passengerRouter } = require('./routers');
 
 const app = express();
 
 app.use(express.json());
+app.use('/passengers', passengerRouter);
 
 const DRIVER_ON_THE_WAY = 2;
 const TRAVEL_IN_PROGRESS = 3;
