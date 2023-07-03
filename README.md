@@ -131,7 +131,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] Dia 1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Seção 1: Docker: Utilizando Containers
 
@@ -164,113 +164,97 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] Dia 5: _Express - Middlewares_
 - [X] Dia 6: _[Projeto - Talks Manager]()_
 
-##### Seção 5: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+##### Seção 5: Arquitetura de software: Model, Service e Controller
 
-- [ ] Dia 1: _Arquitetura de Software - Camada de Model_
-- [ ] Dia 2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] Dia 3: _Arquitetura Web - Rest e Restful_
-- [ ] Dia 4: _Arquitetura de Software - Testando as Camadas_
-- [ ] Dia 5: _[Projeto - Store Manager]()_
+- [X] Dia 1: _Arquitetura de Software - Camada de Model_
+- [X] Dia 2: _Arquitetura de Software - Refatorando Camada Model_
+- [X] Dia 3: _Arquitetura de Software - Camada Service_
+- [X] Dia 4: _Arquitetura de Software - Refatorando Camada Service_
+- [X] Dia 5: _Arquitetura de Software - Refatorando Camada Controller_
+- [X] Dia 6: _[Projeto - Store Manager]()_
 
 ##### Seção 6: Node.js: ORM e Autenticação
 
-- [ ] Dia 1: _ORM - Interface de aplicação com o banco de dados_
-- [ ] Dia 2: _ORM - Associations_
-- [ ] Dia 3: _JWT - JSON Web Token_
-- [ ] Dia 4: _Testando APIs com Testes de Integração_
-- [ ] Dia 5: _[Projeto - API de Blogs]()_
+- [X] Dia 1: _ORM - Interface de aplicação com o banco de dados_
+- [X] Dia 2: _ORM - Associations 1:1 e 1:N_
+- [X] Dia 3: _ORM - Associations N:N e Transactions_
+- [X] Dia 4: _JWT - JSON Web Token_
+- [X] Dia 5: _[Projeto - API de Blogs]()_
 
-##### Seção 7: Deployment
+##### Seção 7: Masterclass: Implementação de Aplicações na Nuvem
 
-- [ ] Dia 1: _Infraestrutura - Deploy com Heroku_
-- [ ] Dia 2: _Deploy Docker & Heroku_
-- [ ] Dia 3: _[Projeto - Stranger Things]()_
+- [X] Dia 1: _Infraestrutura - Deploy com Railway_
 
 ##### Seção 8: TypeScript
 
-- [ ] Dia 1: _Introdução ao TypeScript_
-- [ ] Dia 2: _Tipagem Estática e Generics_
-- [ ] Dia 3: _Express com TypeScript_
-- [ ] Dia 4: _[Projeto - Trybe Smith]()_
+- [X] Dia 1: _Introdução ao TypeScript_
+- [X] Dia 2: _Introdução a Generics_
+- [X] Dia 3: _API REST com Express, JWT, Sequelize e TypeScript_
+- [X] Dia 4: _Testando aplicações com TypeScript_
+- [X] Dia 5: _[Projeto - Trybe Smith]()_
 
 ##### Seção 9: Programação Orientada a Objetos e SOLID
 
-- [ ] Dia 1: _Introdução à Orientação a Objetos_
-- [ ] Dia 2: _Herança e Interfaces_
-- [ ] Dia 3: _Polimorfismo_
-- [ ] Dia 4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] Dia 5: _SOLID - Princípios L e I_
-- [ ] Dia 6: _[Projeto - Trybers and Dragons]()_
+- [X] Dia 1: _Introdução à Orientação a Objetos_
+- [X] Dia 2: _Herança e Composição_
+- [X] Dia 3: _Polimorfismo_
+- [X] Dia 4: _SOLID - Introdução e Princípios S, O e D_
+- [X] Dia 5: _SOLID - Princípios L e I_
+- [X] Dia 6: _[Projeto - Trybers and Dragons]()_
 
 ##### Seção 10: NodeJS
 
-- [ ] Dia 1: _[Projeto - TFC - Trybe Futebol Clube]()_
+- [X] Dia 1: _Express com Classes_
+- [X] Dia 2: _[Projeto - TFC - Trybe Futebol Clube]()_
 
-##### Seção 11: Introdução ao MongoDB
-
-- [ ] Dia 1: _MongoDB - Introdução_
-- [ ] Dia 2: _Filter Operators_
-- [ ] Dia 3: _Operadores de consulta_
-- [ ] Dia 4: _Updates Simples_
-- [ ] Dia 5: _Updates Complexos - Arrays_
-- [ ] Dia 6: _[Projeto - Commerce]()_
-
-##### Seção 12: MongoDB com Node.js e POO
-
-- [ ] Dia 1: _Mongoose e arquitetura MSC - Camada Model_
-- [ ] Dia 2: _Mongoose e arquitetura MSC - Camada Service e Controller_
-- [ ] Dia 3: _[Projeto - Car Shop]()_
-
-##### Seção 13: Projeto
-
-- [ ] Dia 1: _[Projeto - App de Delivery]()_
-
-##### Seção 14: MasterClass - VPS, CI/CD
-
-- [ ] Dia 1: _Dia 1 - VPS_
-- [ ] Dia 2: _Dia 2_
-
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### Seção 1: Introdução à Python
 
-- [ ] Dia 1: _Aprendendo Python_
-- [ ] Dia 2: _Entrada e Saída de dados_
-- [ ] Dia 3: _Testes_
-- [ ] Dia 4: _[Projeto - Job Insights]()_
+- [X] Dia 1: _Aprendendo Python_
+- [X] Dia 2: _Entrada e Saída de dados com testes_
 
-##### Seção 2: Padrões de Projeto
+##### Seção 2: Algoritmos
 
-- [ ] Dia 1: _POO em Python_
-- [ ] Dia 2: _Padrões - Iterator, Adapter, Strategy_
-- [ ] Dia 3: _Padrões - Decorator, Observer, Factory_
-- [ ] Dia 4: _[Projeto - Relatórios de Estoque]()_
+- [X] Dia 1: _Complexidade de Algoritmos_
+- [X] Dia 2: _Recursividade e Estratégias para solução de problemas_
+- [X] Dia 3: _Algoritmos de ordenação e busca_
+- [X] Dia 4: _[Projeto - Algoritmos]()_
 
-##### Seção 3: Redes e Raspagem de Dados
+##### Seção 3: Estrutura de dados I: Listas Lineares
 
-- [ ] Dia 1: _Arquitetura de redes, ferramentas e segurança_
-- [ ] Dia 2: _Raspagem de Dados_
-- [ ] Dia 3: _[Projeto - Tech news]()_
+- [X] Dia 1: _POO em Phyton_
+- [X] Dia 2: _Arrays_
+- [X] Dia 3: _Nó e Listas Encadeadas_
+- [X] Dia 4: _Pilhas e Filas_
+- [X] Dia 5: _[Projeto - TING - Trybe Is Not Google]()_
 
-##### Seção 4: Algoritmos
+##### Seção 4: Estrutura de dados II: Hashmaps e Sets
 
-- [ ] Dia 1: _Complexidade de Algoritmos_
-- [ ] Dia 2: _Recursividade e Estratégias para solução de problemas_
-- [ ] Dia 3: _Algoritmos de ordenação e busca_
-- [ ] Dia 4: _[Projeto - Algoritmos]()_
+- [X] Dia 1: _Hashmap e Dict_
+- [X] Dia 2: _Set_
+- [X] Dia 3: _[Projeto - Restaurant Orders]()_
 
-##### Seção 5: Estrutura de dados I: Arrays, Listas, Filas e Pilhas
+## Eletiva Java :white_check_mark:
 
-- [ ] Dia 1: _Arquitetura de Computadores_
-- [ ] Dia 2: _Arrays_
-- [ ] Dia 3: _Nó e Listas Encadeadas_
-- [ ] Dia 4: _Pilhas e Filas_
-- [ ] Dia 5: _[Projeto - TING - Trybe Is Not Google]()_
+##### Seção 1: Fundamentos de Java
 
-##### Seção 6: Estrutura de dados II: Hashmaps e Sets
+- [X] Dia 1: _Introdução ao Desenvolvimento em Java e Ferramentas Essenciais_
+- [X] Dia 2: _Tipos de dados e Estruturas de Controle de Fluxo_
+- [ ] Dia 3: _Manupulação de Strings, Classes e Tipos Numéricos em Java_
 
-- [ ] Dia 1: _Hashmap e Dict_
-- [ ] Dia 2: _Set_
-- [ ] Dia 3: _[Projeto - Restaurant Orders]()_
+##### Seção 2: Orientação a Objetos
+
+- [ ] Dia 1: _Abstração, Encapsulamento e Herança_
+- [ ] Dia 2: _Polimorfismo, Interfaces e Classes Abstratas_
+
+##### Seção 3: Java Web
+
+- [ ] Dia 1: _Introdução a Java Web_
+- [ ] Dia 2: _Introdução ao Spring_
+- [ ] Dia 3: _API REST com Spring_
+- [ ] Dia 4: _Exceções_
+- [ ] Dia 5: _Testes com JUnit_
+- [ ] Dia 6: _Containers Java e Docker_
 
 # [...]
